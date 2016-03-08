@@ -1,10 +1,10 @@
 # Site settings
-title: Shuai
+title: Shuai Shao
 description: 'Personal space'
 url: 'http://shuaishao.me'
 baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
-disqus_shortname: 'shuai_shao'
+disqus_shortname: shuai_shao
 
 author:
   name: 'Shuai Shao'
