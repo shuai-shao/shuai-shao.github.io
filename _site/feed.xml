@@ -1,63 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Shuai Shao</title>
-    <description>Dreamer and Doer.</description>
-    <link>http://shuaishao.me//</link>
-    <atom:link href="http://shuaishao.me//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 07 Mar 2016 03:03:27 -0800</pubDate>
-    <lastBuildDate>Mon, 07 Mar 2016 03:03:27 -0800</lastBuildDate>
+    <title>Shuai</title>
+    <description>Personal space</description>
+    <link>http://shuaishao.me/x/x//</link>
+    <atom:link href="http://shuaishao.me/x/x//feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 07 Mar 2016 16:26:20 -0800</pubDate>
+    <lastBuildDate>Mon, 07 Mar 2016 16:26:20 -0800</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
-        <title>Hi Yo Silver</title>
-        <description>&lt;p&gt;Keep posted &lt;code class=&quot;highlighter-rouge&quot;&gt;sadf&lt;/code&gt;. Nonsense nonsense &lt;code class=&quot;highlighter-rouge&quot;&gt;nonsense&lt;/code&gt;. You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve --watch&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+        <title>SQL - First row in each Group</title>
+        <description>&lt;p&gt;Say we have a nice teacher rating website for Hogwarts students (www.castledoor.hw) and users like Harry and Hermione like to come and review their professors.  I have got a &lt;strong&gt;reviews&lt;/strong&gt; table that looks like:&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blogs/sql1.jpg&quot; alt=&quot;sql1&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;So the question is:&lt;/strong&gt;&lt;br /&gt;
+How to get the highest number of reviews by each student?&lt;br /&gt;
+Sample output would be:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;whatever&lt;/span&gt; 
-&lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blogs/sql2.jpg&quot; alt=&quot;sql2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;And the question really is:&lt;/strong&gt; &lt;br /&gt;
+How to select first row of each set of rows grouped with a &lt;em&gt;GROUP BY&lt;/em&gt;?&lt;br /&gt;
+&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;WITH&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;review_order&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;PK_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;users&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n_reviews&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;ROW_NUMBER&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;OVER&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PARTITION&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;users&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n_reviews&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DESC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rn&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;reviews&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;PK_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;users&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n_reviews&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;review_order&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;rn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
-
 </description>
-        <pubDate>Fri, 04 Mar 2016 00:00:00 -0800</pubDate>
-        <link>http://shuaishao.me//2016/travel_blog/</link>
-        <guid isPermaLink="true">http://shuaishao.me//2016/travel_blog/</guid>
+        <pubDate>Mon, 07 Mar 2016 00:00:00 -0800</pubDate>
+        <link>http://shuaishao.me/x/x//2016/sql-first-row-in-each-group/</link>
+        <guid isPermaLink="true">http://shuaishao.me/x/x//2016/sql-first-row-in-each-group/</guid>
         
-        <category>jekyll</category>
+        <category>data</category>
+        
+        <category>sql</category>
         
         
-        <category>travel</category>
+        <category>data</category>
         
       </item>
     
       <item>
-        <title>My travel plan</title>
-        <description>&lt;p&gt;This is my travel plan.&lt;/p&gt;
+        <title>One month as a (real) data scientist</title>
+        <description>&lt;p&gt;Have been working as a data scientist for more than one month. Still a lot to learn and to play with. Definitely love what I am doing and look forward to making some impacts. The data I am working with is a lot messier than datasets I’ve been working with before. But yeah, welcome to the real world!   
+Working environment is somehow different from PhD life. You don’t have that much time to understand something thoroughly and make something ‘perfectly’. Get something done is much more important than get it done perfectly. Some rules I learned at Insight are still applicable here:&lt;br /&gt;
+&lt;strong&gt;ROI&lt;/strong&gt;: Prioritize your tasks. Work on things with higher ROI.&lt;br /&gt;
+&lt;strong&gt;80% rule&lt;/strong&gt;: Get 80% job done in a short period is much better than getting 99% done in a long time&lt;br /&gt;
+&lt;strong&gt;15 mins rule&lt;/strong&gt;: No need to reinvent the wheel. Whenever you get stuck for some time (maybe 15 mins), stand up and ask around. Data sciense is teamwork.   
+Skillwise, I belive these skills will be heavily involved and honed in my current project:&lt;br /&gt;
+1. Communication&lt;br /&gt;
+Definitely the most important skill. Should be able to convey your ideas and deliver your results to others fully and clearly. Be mindful about high-level thinking and talking (speak English, not math). Also, listen really well to others’ ideas. Be open-minded. Listen to understand, not to be right.&lt;br /&gt;
+2. Information integration&lt;br /&gt;
+A lot of times, I will be working with multiple data/infomation from different data sources. Being able to connect the dots and integrate information is crucial.&lt;br /&gt;
+3. SQL&lt;br /&gt;
+Retrieving data from our database.   
+4. Python&lt;br /&gt;
+Especially packages like Pandas, Numpy, sklearn, matplotlib. Data cleaning, merging, wrangling, and machine learning!&lt;br /&gt;
+5. R&lt;br /&gt;
+Though I am a big Python fan, it’s good to know something new.   
+6. Machine Learning&lt;br /&gt;
+Black box! Secret weapon!&lt;br /&gt;
+7. Tableau (data delivery / visualization)&lt;br /&gt;
+Deliver your insights and results in a neat and actionable manner.&lt;br /&gt;
+Some skills I want to learn but are not emphasized here include big data platform (Spark especially), interactive data visualization (D3), and database knowledge. So, here are three online courses that can get my feet wet. Play with them in my free time!&lt;br /&gt;
+1. &lt;a href=&quot;https://www.edx.org/course/introduction-big-data-apache-spark-uc-berkeleyx-cs100-1x&quot;&gt;Introduction to Big Data with Apache Spark&lt;/a&gt;&lt;br /&gt;
+2. &lt;a href=&quot;https://www.udacity.com/course/data-visualization-and-d3js--ud507&quot;&gt;Data Visualization and D3.js&lt;/a&gt;&lt;br /&gt;
+3. &lt;a href=&quot;https://lagunita.stanford.edu/courses/Engineering/db/2014_1/about&quot;&gt;Introduction to Databases&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/braceyourself.jpg&quot; alt=&quot;braceyourself&quot; /&gt;&lt;br /&gt;
+Have fun!&lt;/p&gt;
 </description>
-        <pubDate>Fri, 04 Mar 2016 00:00:00 -0800</pubDate>
-        <link>http://shuaishao.me//2016/travel/</link>
-        <guid isPermaLink="true">http://shuaishao.me//2016/travel/</guid>
-        
-        <category>travel</category>
-        
-        
-        <category>travel</category>
-        
-      </item>
-    
-      <item>
-        <title>Data science is awesome</title>
-        <description>&lt;p&gt;This is the first blogpost about data.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 04 Mar 2016 00:00:00 -0800</pubDate>
-        <link>http://shuaishao.me//2016/data_blog/</link>
-        <guid isPermaLink="true">http://shuaishao.me//2016/data_blog/</guid>
+        <pubDate>Mon, 07 Mar 2016 00:00:00 -0800</pubDate>
+        <link>http://shuaishao.me/x/x//2016/one-month-as-a-real-data-scientist/</link>
+        <guid isPermaLink="true">http://shuaishao.me/x/x//2016/one-month-as-a-real-data-scientist/</guid>
         
         <category>data</category>
         
@@ -67,12 +97,85 @@
       </item>
     
       <item>
-        <title>Reading is fun</title>
-        <description>&lt;p&gt;Reading books is fun.&lt;/p&gt;
+        <title>A to-do list for transitioning to data science</title>
+        <description>&lt;p&gt;Back to when I made my mind to become a data scientist, I knew little about data industry, and literally nothing about machine learning and SQL. What I did have were quantitative background, problem-solving skills, and most important of all, a huge passion and curiosity for data science. I still remember how excited I was the first time I read the article ‘Preparing for Insight’ from Insight Data Science. I made the plan and carried on step by step and now I’m much more well equipped. There are still a lot to know and to do, but I am full of passion and curiosity. Unknown is the only known thing on this road, which I will constantly face and conquer. Here is a growing list about things I plan to do. Those have been finished are marked in red.&lt;/p&gt;
+
+&lt;p&gt;1. Python&lt;br /&gt;
+    1.1 Google’s Python Class &lt;br /&gt;
+    1.2 Python Tutorial&lt;br /&gt;
+    1.3  Introduction to Python guide book&lt;br /&gt;
+2. Data Analysis Using Python&lt;br /&gt;
+    2.1 Python for Data Analysis book (Python, Scipy, Numpy, Pandas) &lt;br /&gt;
+    2.2 Wes Mckinney’s video/ 10-minutes to Pandas tutorial (Pandas)&lt;br /&gt;
+3. SQL&lt;br /&gt;
+    3.1 Learning SQL book (MySQL)&lt;br /&gt;
+    3.2 SQL Zoo tutorial (MyQL)&lt;br /&gt;
+    3.3 Zetcode’s tutorial ( Interface with SQL through Python)&lt;br /&gt;
+    3.4 Introduction to Databases (coursera, Stanford)&lt;br /&gt;
+4. Machine Learning&lt;br /&gt;
+    4.1 Machine Learning Coursera (Machine learning, Octave/Matlab)&lt;br /&gt;
+    4.2 Scikit-Learn online video (Jake) and tutorial   
+    4.3 Machine Learning in Action ( Algorithms and implementations using Python)&lt;br /&gt;
+    4.4 Articles and papers about deep learning&lt;br /&gt;
+    4.5 The Elements of Statistical Learning book (more theory-heavy)&lt;br /&gt;
+5. Big Data Platform (Hadoop, Spark)&lt;br /&gt;
+    5.1 Hadoop Illuminated book ( A general intro to Hadoop and MapReduce)&lt;br /&gt;
+    5.2 Intro to Hadoop and MapReduce Udacity online course&lt;br /&gt;
+    5.3 Keep reading articles about Spark. Get a big picture (writing blogs to record ideas and thoughts)&lt;br /&gt;
+    5.4 Introduction to Big Data with Apache Spark online course  &lt;br /&gt;
+6. CS Basics (Algorithms and Data Structures)&lt;br /&gt;
+    6.1 Problem Solving with Algorithms and Data Structures book (Python focus)&lt;br /&gt;
+    6.2 Leetcode OJ problems&lt;br /&gt;
+7. Statistics&lt;br /&gt;
+    7.1 Brush up statistics: read Think stats/ prob cheatsheet&lt;br /&gt;
+8. Learn DS by Doing DS!&lt;br /&gt;
+    8.1 Kaggle Competition (start from 101, and team up to participate into a real one)&lt;br /&gt;
+    8.2 Linkedin Economic Graph Competition&lt;br /&gt;
+    8.3 Side project using social data (Visualizing your results and share with friends!)&lt;br /&gt;
+9. Reaching Out and Conference&lt;br /&gt;
+    9.1 Boston Data Festival&lt;br /&gt;
+10. Broad reading&lt;br /&gt;
+    10.1 Read articles and news about DS everyday. (See another post for a thorough list of DS blog sites I enjoy)&lt;br /&gt;
+11. Data Visualization&lt;br /&gt;
+    11.1 Data Visualization and D3.js course.&lt;/p&gt;
+
+&lt;p&gt;The list keeps growing…&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/a-to-do-list.jpg&quot; alt=&quot;todo&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Fri, 04 Mar 2016 00:00:00 -0800</pubDate>
-        <link>http://shuaishao.me//2016/books_blog/</link>
-        <guid isPermaLink="true">http://shuaishao.me//2016/books_blog/</guid>
+        <pubDate>Mon, 07 Mar 2016 00:00:00 -0800</pubDate>
+        <link>http://shuaishao.me/x/x//2016/A-to-do-list-for-transitioning-to-data-science/</link>
+        <guid isPermaLink="true">http://shuaishao.me/x/x//2016/A-to-do-list-for-transitioning-to-data-science/</guid>
+        
+        <category>data</category>
+        
+        
+        <category>data</category>
+        
+      </item>
+    
+      <item>
+        <title>2016读书计划和书单</title>
+        <description>&lt;p&gt;新的一年，其中一个resolution便是读书。平均每两~三周一本，一年读完20本书左右。列一个书单，包括自己很想读的书： &lt;br /&gt;
+- &lt;a href=&quot;https://book.douban.com/subject/25893465/&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;万历十五年&lt;/strong&gt;&lt;/a&gt;  &lt;br /&gt;
+- &lt;a href=&quot;https://book.douban.com/subject/26427703/&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;三体2&lt;/strong&gt;&lt;/a&gt;  &lt;br /&gt;
+- &lt;a href=&quot;https://book.douban.com/subject/26427705/&quot; target=&quot;_blank&quot;&gt;三体3&lt;/a&gt;&lt;br /&gt;
+- &lt;a href=&quot;https://book.douban.com/subject/11879367/&quot; target=&quot;_blank&quot;&gt;A history of Japan&lt;/a&gt;&lt;br /&gt;
+- &lt;a href=&quot;https://book.douban.com/subject/3633461/&quot; target=&quot;_blank&quot;&gt;一句顶一万句&lt;/a&gt;&lt;br /&gt;
+- &lt;a href=&quot;https://book.douban.com/subject/3901880/&quot; target=&quot;_blank&quot;&gt;沉默的大多数&lt;/a&gt;   &lt;br /&gt;
+- &lt;a href=&quot;https://book.douban.com/subject/21706191/&quot; target=&quot;_blank&quot;&gt;Introduction to Statistical Learning&lt;/a&gt; &lt;br /&gt;
+- &lt;a href=&quot;https://book.douban.com/subject/6880158/&quot; target=&quot;_blank&quot;&gt;陆犯焉识&lt;/a&gt;   &lt;br /&gt;
+- &lt;a href=&quot;https://book.douban.com/subject/25904521/&quot; target=&quot;_blank&quot;&gt;Sapiens: A Brief History of Humankind&lt;/a&gt;&lt;br /&gt;
+- &lt;a href=&quot;https://book.douban.com/subject/20545453/&quot; target=&quot;_blank&quot;&gt;The World of Yesterday&lt;/a&gt;&lt;br /&gt;
+- &lt;a href=&quot;https://book.douban.com/subject/6783783/&quot; target=&quot;_blank&quot;&gt;人类群星闪耀时&lt;/a&gt; &lt;br /&gt;
+- To be continued&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/bookpic.jpg&quot; alt=&quot;bookpic&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 07 Mar 2016 00:00:00 -0800</pubDate>
+        <link>http://shuaishao.me/x/x//2016/book-list-2016/</link>
+        <guid isPermaLink="true">http://shuaishao.me/x/x//2016/book-list-2016/</guid>
         
         <category>books</category>
         
@@ -83,16 +186,34 @@
     
       <item>
         <title>A bit about me</title>
-        <description>&lt;p&gt;My name is Batman. I live in Gotham. Recently, I relocated to San Francisco.&lt;/p&gt;
+        <description>&lt;p&gt;I’m a physicist and aspiring data scientist.&lt;br /&gt;
+I am curious about this world and enjoy solving challenging problems using my logic and thinking.&lt;br /&gt;
+My research focuses on data-driven statistical analysis and mathematical modeling of complex networks. After several years’ study of hard-core science, I am ready to get my hands dirty and make some real-world impact in data science. &lt;/p&gt;
+</description>
+        <pubDate>Mon, 07 Mar 2016 00:00:00 -0800</pubDate>
+        <link>http://shuaishao.me/x/x//2016/about-me/</link>
+        <guid isPermaLink="true">http://shuaishao.me/x/x//2016/about-me/</guid>
+        
+        <category>about</category>
+        
+        
+        <category>about</category>
+        
+      </item>
+    
+      <item>
+        <title>My travel plan</title>
+        <description>&lt;p&gt;日本：done&lt;br /&gt;
+英国：to be done&lt;/p&gt;
 </description>
         <pubDate>Fri, 04 Mar 2016 00:00:00 -0800</pubDate>
-        <link>http://shuaishao.me//2016/about_blog/</link>
-        <guid isPermaLink="true">http://shuaishao.me//2016/about_blog/</guid>
+        <link>http://shuaishao.me/x/x//2016/my-travel-plan/</link>
+        <guid isPermaLink="true">http://shuaishao.me/x/x//2016/my-travel-plan/</guid>
         
-        <category>about</category>
+        <category>travel</category>
         
         
-        <category>about</category>
+        <category>travel</category>
         
       </item>
     

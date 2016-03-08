@@ -1,14 +1,13 @@
 # Site settings
-title: Shuai Shao
-description: 'Dreamer and Doer.'
+title: Shuai
+description: 'Personal space'
 url: 'http://shuaishao.me'
 baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
-#disqus_shortname: 'your-disqus-name'
+disqus_shortname: 'shuai_shao'
 
 author:
   name: 'Shuai Shao'
-  email: sshaoking@gmail.com
   github_username:  shuai-shao
   linkedin_username:  shuaishao1
 
