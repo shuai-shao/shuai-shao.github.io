@@ -1,8 +1,11 @@
 ---
-title:  "My travel plan"
+title:  "2016-我的旅行计划"
 date:   2016-03-07 
 categories: [travel]
 tags: [travel]
 ---
-日本：done  
-英国：to be done
+日本：二月。  
+波士顿：五月。  
+加拿大：待定。看家人。  
+英国：冬天，待定。在教授离开前看一场兵工厂的比赛。  
+
