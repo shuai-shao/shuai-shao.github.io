@@ -4,7 +4,7 @@ description: '单纯明快'
 url: 'http://shuaishao.me'
 baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
-disqus_shortname: shuaishao
+#disqus_shortname: shuaishao
 
 author:
   name: 'Shuai Shao'
