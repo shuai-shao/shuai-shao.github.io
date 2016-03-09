@@ -25,9 +25,9 @@ Black box! Secret weapon!
 7. Tableau (data delivery / visualization)  
 Deliver your insights and results in a neat and actionable manner.  
 Some skills I want to learn but are not emphasized here include big data platform (Spark especially), interactive data visualization (D3), and database knowledge. So, here are three online courses that can get my feet wet. Play with them in my free time!  
-1. [Introduction to Big Data with Apache Spark](https://www.edx.org/course/introduction-big-data-apache-spark-uc-berkeleyx-cs100-1x)  
-2. [Data Visualization and D3.js](https://www.udacity.com/course/data-visualization-and-d3js--ud507)  
-3. [Introduction to Databases](https://lagunita.stanford.edu/courses/Engineering/db/2014_1/about)  
+1. [Introduction to Big Data with Apache Spark](https://www.edx.org/course/introduction-big-data-apache-spark-uc-berkeleyx-cs100-1x){:target="_blank"}    
+2. [Data Visualization and D3.js](https://www.udacity.com/course/data-visualization-and-d3js--ud507){:target="_blank"}    
+3. [Introduction to Databases](https://lagunita.stanford.edu/courses/Engineering/db/2014_1/about){:target="_blank"}    
 
 ![braceyourself](/images/blogs/braceyourself.jpg)  
 Have fun! 
