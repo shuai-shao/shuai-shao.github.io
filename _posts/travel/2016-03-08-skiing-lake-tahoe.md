@@ -14,6 +14,8 @@ tags: [travel, photography]
 这是5：3的观感： 
 ![image5-3](/images/blogs/tahoe/tahoe-5-3.jpg)  
 这是5：4的观感：  
-![image5-4](/images/blogs/tahoe/tahoe-5-4.jpg) 
+![image5-4](/images/blogs/tahoe/tahoe-5-4.jpg)  
+
+我猜想比例在黄金分割（1.618）附近会比较美观。事实证明也是如此。  
   
  
