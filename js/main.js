@@ -16,7 +16,7 @@ $(document).ready(function () {
     }
   })
 
-  if (window.location.hash && (window.location.hash == '#data' || window.location.hash == '#about' || window.location.hash == '#books'
+  if (window.location.hash && (window.location.hash == '#data' || window.location.hash == '#misc' || window.location.hash == '#books'
     || window.location.hash == '#travel') ) {
     $('.panel-cover').addClass('panel-cover--collapsed')
   }
