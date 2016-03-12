@@ -5,9 +5,30 @@
     <description>单纯明快</description>
     <link>http://shuaishao.me//</link>
     <atom:link href="http://shuaishao.me//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 11 Mar 2016 18:13:58 -0800</pubDate>
-    <lastBuildDate>Fri, 11 Mar 2016 18:13:58 -0800</lastBuildDate>
+    <pubDate>Fri, 11 Mar 2016 18:30:18 -0800</pubDate>
+    <lastBuildDate>Fri, 11 Mar 2016 18:30:18 -0800</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
+    
+      <item>
+        <title>游记的格式</title>
+        <description>&lt;p&gt;很显然，这里不适合传照片。目前想到的解决办法是外链：&lt;br /&gt;
+题图 + 摘要 + 游记外链 + 照片外链&lt;br /&gt;
+题图：一张，宽长比1.618，自己拍摄&lt;br /&gt;
+摘要: 一段（或者不要？待定）
+游记外链：Evernote链接
+照片外链：Flickr相册链接&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 11 Mar 2016 00:00:00 -0800</pubDate>
+        <link>http://shuaishao.me//2016/format-for-travel-notes/</link>
+        <guid isPermaLink="true">http://shuaishao.me//2016/format-for-travel-notes/</guid>
+        
+        <category>travel</category>
+        
+        
+        <category>travel</category>
+        
+      </item>
     
       <item>
         <title>About trade-offs in data science</title>
@@ -45,7 +66,7 @@
 &lt;img src=&quot;/images/blogs/tahoe/tahoe-5-4.jpg&quot; alt=&quot;image5-4&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;我猜想比例在黄金分割（1.618）附近会比较美观。事实证明也是如此。所以比例应该尽量精确固定在1.618附近。   &lt;br /&gt;
-原图没有经过压缩，每张的大小在2-3 MB， 五张图已经使网页刷新速度变慢。。。还是需要在不影响观感的情况下，压缩在100K以下。&lt;br /&gt;
+原图没有经过压缩，每张的大小在 2-3 MB， 五张图已经使网页刷新速度变慢。。。还是需要在不影响观感的情况下，压缩在100K以下。&lt;br /&gt;
 主页每个类别预览处需要重新写代码，看起来太烂。&lt;br /&gt;
 长久来看，游记的照片需要存在一个可靠的地方，提供链接即可。&lt;/p&gt;
 
@@ -293,34 +314,6 @@ Have fun!&lt;/p&gt;
         
         
         <category>data</category>
-        
-      </item>
-    
-      <item>
-        <title>2016读书计划和书单</title>
-        <description>&lt;p&gt;新的一年，其中一个resolution便是读书。平均每两~三周一本，一年读完20本书左右。列一个书单，包括自己很想读的书： &lt;br /&gt;
-- &lt;a href=&quot;https://book.douban.com/subject/25893465/&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;万历十五年&lt;/strong&gt;&lt;/a&gt;  &lt;br /&gt;
-- &lt;a href=&quot;https://book.douban.com/subject/26427703/&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;三体2&lt;/strong&gt;&lt;/a&gt;  &lt;br /&gt;
-- &lt;a href=&quot;https://book.douban.com/subject/26427705/&quot; target=&quot;_blank&quot;&gt;三体3&lt;/a&gt;&lt;br /&gt;
-- &lt;a href=&quot;https://book.douban.com/subject/11879367/&quot; target=&quot;_blank&quot;&gt;A history of Japan&lt;/a&gt;&lt;br /&gt;
-- &lt;a href=&quot;https://book.douban.com/subject/3633461/&quot; target=&quot;_blank&quot;&gt;一句顶一万句&lt;/a&gt;&lt;br /&gt;
-- &lt;a href=&quot;https://book.douban.com/subject/3901880/&quot; target=&quot;_blank&quot;&gt;沉默的大多数&lt;/a&gt;   &lt;br /&gt;
-- &lt;a href=&quot;https://book.douban.com/subject/21706191/&quot; target=&quot;_blank&quot;&gt;Introduction to Statistical Learning&lt;/a&gt; &lt;br /&gt;
-- &lt;a href=&quot;https://book.douban.com/subject/6880158/&quot; target=&quot;_blank&quot;&gt;陆犯焉识&lt;/a&gt;   &lt;br /&gt;
-- &lt;a href=&quot;https://book.douban.com/subject/25904521/&quot; target=&quot;_blank&quot;&gt;Sapiens: A Brief History of Humankind&lt;/a&gt;&lt;br /&gt;
-- &lt;a href=&quot;https://book.douban.com/subject/20545453/&quot; target=&quot;_blank&quot;&gt;The World of Yesterday&lt;/a&gt;&lt;br /&gt;
-- &lt;a href=&quot;https://book.douban.com/subject/6783783/&quot; target=&quot;_blank&quot;&gt;人类群星闪耀时&lt;/a&gt; &lt;br /&gt;
-- To be continued&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 07 Mar 2016 00:00:00 -0800</pubDate>
-        <link>http://shuaishao.me//2016/book-list-2016/</link>
-        <guid isPermaLink="true">http://shuaishao.me//2016/book-list-2016/</guid>
-        
-        <category>books</category>
-        
-        
-        <category>books</category>
         
       </item>
     
