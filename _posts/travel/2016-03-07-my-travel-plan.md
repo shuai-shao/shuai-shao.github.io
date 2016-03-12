@@ -1,5 +1,5 @@
 ---
-title:  "2016-我的旅行计划"
+title:  "2016我的旅行计划"
 date:   2016-03-07 
 categories: [travel]
 tags: [travel]

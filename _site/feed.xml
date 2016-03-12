@@ -5,18 +5,44 @@
     <description>单纯明快</description>
     <link>http://shuaishao.me//</link>
     <atom:link href="http://shuaishao.me//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 11 Mar 2016 18:30:18 -0800</pubDate>
-    <lastBuildDate>Fri, 11 Mar 2016 18:30:18 -0800</lastBuildDate>
+    <pubDate>Sat, 12 Mar 2016 00:58:45 -0800</pubDate>
+    <lastBuildDate>Sat, 12 Mar 2016 00:58:45 -0800</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
+        <title>温泉的一瞬</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/blogs/onsen/onsen.jpg&quot; alt=&quot;onsen&quot; /&gt;&lt;br /&gt;
+日本之行有很多愉快的经历。但是如果若干年后回忆起来，一定是这个瞬间让我记忆犹新。&lt;br /&gt;
+东京之行的第三天，乘车到小田原市的箱根町，日本著名的温泉之乡。为了尽可能体验日本的文化，入住了这里可以看到富士山的温泉旅馆，选了只有榻榻米的和式房间。&lt;br /&gt;
+晚上十点多钟，露天风吕只剩下了我一个人。从里面洗浴出来，被二月的晚风吹得有些冷。露天的温泉池上是氤氲的雾气，池边星星点点几盏灯也在雾气中模糊开来。&lt;br /&gt;
+靠在流水下的石头上，身体一半在水里，一半在水上，一半温烫，一半韫凉。天气甚好，抬头便是月亮和满天的星星，远处便是隐约的富士山。赤身裸体躺在这泉水中，仿佛和自然融为一体。&lt;br /&gt;
+突然想起了Immortal Beloved里最后的一幕。少年贝多芬在第九交响曲的背景音乐中狂奔，当ode to joy的高潮部分响起，他赤身躺在湖中，和天上的星星在湖中的倒影融为一体，和宇宙星空融为一体。&lt;br /&gt;
+一瞬间，我仿佛体会到了那种自由。&lt;br /&gt;
+&lt;img src=&quot;/images/blogs/onsen/onsen2.jpg&quot; alt=&quot;onsen2&quot; /&gt; 
+（温泉不能拍照，有幸在旅馆的主页上看到露天风吕的照片，还原度90% ：）&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 12 Mar 2016 00:00:00 -0800</pubDate>
+        <link>http://shuaishao.me//2016/a-moment-in-onsen/</link>
+        <guid isPermaLink="true">http://shuaishao.me//2016/a-moment-in-onsen/</guid>
+        
+        <category>travel</category>
+        
+        
+        <category>travel</category>
+        
+      </item>
+    
+      <item>
         <title>游记的格式</title>
-        <description>&lt;p&gt;很显然，这里不适合传照片。目前想到的解决办法是外链：&lt;br /&gt;
+        <description>&lt;p&gt;终于要开始整理游记了。&lt;br /&gt;
+很显然，这里不适合传照片。目前想到的解决办法是外链：&lt;br /&gt;
 题图 + 摘要 + 游记外链 + 照片外链&lt;br /&gt;
 题图：一张，宽长比1.618，自己拍摄&lt;br /&gt;
-摘要: 一段（或者不要？待定）
-游记外链：Evernote链接
-照片外链：Flickr相册链接&lt;/p&gt;
+摘要: 一段（或者不要？待定）&lt;br /&gt;
+游记外链：Evernote链接&lt;br /&gt;
+照片外链：Flickr相册链接&lt;br /&gt;
+Let us see how it goes.&lt;/p&gt;
 
 </description>
         <pubDate>Fri, 11 Mar 2016 00:00:00 -0800</pubDate>
@@ -129,7 +155,7 @@ A7ii + FE55 1.8, 目前最优组合。什么都好，只是，价钱感人。&lt
       </item>
     
       <item>
-        <title>2016-我的旅行计划</title>
+        <title>2016我的旅行计划</title>
         <description>&lt;p&gt;日本：二月。&lt;br /&gt;
 波士顿：五月。&lt;br /&gt;
 加拿大：待定。看家人。&lt;br /&gt;
@@ -149,17 +175,15 @@ A7ii + FE55 1.8, 目前最优组合。什么都好，只是，价钱感人。&lt
     
       <item>
         <title>About me, about this blog</title>
-        <description>&lt;p&gt;About me:&lt;br /&gt;
-  A physicist.&lt;br /&gt;
-  A data scientist.&lt;br /&gt;
-  A minimalist.&lt;br /&gt;
+        <description>&lt;p&gt;&lt;strong&gt;About me:&lt;/strong&gt;&lt;br /&gt;
+  A physicist/data scientist/minimalist.  &lt;br /&gt;
   Less is more.&lt;/p&gt;
 
-&lt;p&gt;About this blog:&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;About this blog:&lt;/strong&gt;&lt;br /&gt;
   Hosted on Github.&lt;br /&gt;
-  Created using Jekyll. 
-  Blogged in English and Chinese.   &lt;br /&gt;
-  About things I enjoy.&lt;/p&gt;
+  Created using Jekyll.&lt;br /&gt;
+  Blogged in English and Chinese.    &lt;br /&gt;
+  About things I like.&lt;/p&gt;
 </description>
         <pubDate>Mon, 07 Mar 2016 00:00:00 -0800</pubDate>
         <link>http://shuaishao.me//2016/about-me/</link>
@@ -174,15 +198,74 @@ A7ii + FE55 1.8, 目前最优组合。什么都好，只是，价钱感人。&lt
     
       <item>
         <title>SQL - First row in each Group</title>
-        <description>&lt;p&gt;Say we have a nice teacher rating website for Hogwarts students (www.castledoor.hw) and users like Harry and Hermione like to come and review their professors.  I have got a &lt;strong&gt;reviews&lt;/strong&gt; table that looks like:&lt;/p&gt;
+        <description>&lt;p&gt;Say we have a nice teacher rating website for Hogwarts students (www.castledoor.hw) and users like Harry and Hermione like to come and review their professors.  I have got a &lt;strong&gt;reviews&lt;/strong&gt; table that looks like:&lt;br /&gt;
+&lt;!-- this part is for inserting a table, which is not convenient in markdown--&gt;&lt;/p&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-yw4l{vertical-align:top}
+&lt;/style&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blogs/sql1.jpg&quot; alt=&quot;sql1&quot; /&gt;&lt;/p&gt;
+&lt;table class=&quot;tg&quot;&gt;
+  &lt;tr&gt;
+    &lt;th class=&quot;tg-031e&quot;&gt;PK_id&lt;/th&gt;
+    &lt;th class=&quot;tg-031e&quot;&gt;users&lt;/th&gt;
+    &lt;th class=&quot;tg-031e&quot;&gt;n_reviews&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;1&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;Harry&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;5&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;2&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;Hermione&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;8&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;3&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;Hermione&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;12&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-yw4l&quot;&gt;4&lt;/td&gt;
+    &lt;td class=&quot;tg-yw4l&quot;&gt;Harry&lt;/td&gt;
+    &lt;td class=&quot;tg-yw4l&quot;&gt;3&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-yw4l&quot;&gt;5&lt;/td&gt;
+    &lt;td class=&quot;tg-yw4l&quot;&gt;Hermione&lt;/td&gt;
+    &lt;td class=&quot;tg-yw4l&quot;&gt;6&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
 
 &lt;p&gt;&lt;strong&gt;So the question is:&lt;/strong&gt;&lt;br /&gt;
 How to get the highest number of reviews by each student?&lt;br /&gt;
 Sample output would be:&lt;/p&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+&lt;/style&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blogs/sql2.jpg&quot; alt=&quot;sql2&quot; /&gt;&lt;/p&gt;
+&lt;table class=&quot;tg&quot;&gt;
+  &lt;tr&gt;
+    &lt;th class=&quot;tg-031e&quot;&gt;PK_id&lt;/th&gt;
+    &lt;th class=&quot;tg-031e&quot;&gt;users&lt;/th&gt;
+    &lt;th class=&quot;tg-031e&quot;&gt;n_reviews&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;1&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;Harry&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;5&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;3&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;Hermione&lt;/td&gt;
+    &lt;td class=&quot;tg-031e&quot;&gt;12&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
 
 &lt;p&gt;&lt;strong&gt;And the question really is:&lt;/strong&gt; &lt;br /&gt;
 How to select first row of each set of rows grouped with a &lt;em&gt;GROUP BY&lt;/em&gt;?&lt;br /&gt;
@@ -251,64 +334,6 @@ Have fun!&lt;/p&gt;
         <pubDate>Mon, 07 Mar 2016 00:00:00 -0800</pubDate>
         <link>http://shuaishao.me//2016/one-month-as-a-real-data-scientist/</link>
         <guid isPermaLink="true">http://shuaishao.me//2016/one-month-as-a-real-data-scientist/</guid>
-        
-        <category>data</category>
-        
-        
-        <category>data</category>
-        
-      </item>
-    
-      <item>
-        <title>A to-do list for transitioning to data science</title>
-        <description>&lt;p&gt;Back to when I made my mind to become a data scientist, I knew little about data industry, and literally nothing about machine learning and SQL. What I did have were quantitative background, problem-solving skills, and most important of all, a huge passion and curiosity for data science. I still remember how excited I was the first time I read the article ‘Preparing for Insight’ from Insight Data Science. I made the plan and carried on step by step and now I’m much more well equipped. There are still a lot to know and to do, but I am full of passion and curiosity. Unknown is the only known thing on this road, which I will constantly face and conquer. Here is a growing list about things I plan to do. Those have been finished are marked in red.&lt;/p&gt;
-
-&lt;p&gt;1. Python&lt;br /&gt;
-    1.1 Google’s Python Class &lt;br /&gt;
-    1.2 Python Tutorial&lt;br /&gt;
-    1.3  Introduction to Python guide book&lt;br /&gt;
-2. Data Analysis Using Python&lt;br /&gt;
-    2.1 Python for Data Analysis book (Python, Scipy, Numpy, Pandas) &lt;br /&gt;
-    2.2 Wes Mckinney’s video/ 10-minutes to Pandas tutorial (Pandas)&lt;br /&gt;
-3. SQL&lt;br /&gt;
-    3.1 Learning SQL book (MySQL)&lt;br /&gt;
-    3.2 SQL Zoo tutorial (MyQL)&lt;br /&gt;
-    3.3 Zetcode’s tutorial ( Interface with SQL through Python)&lt;br /&gt;
-    3.4 Introduction to Databases (coursera, Stanford)&lt;br /&gt;
-4. Machine Learning&lt;br /&gt;
-    4.1 Machine Learning Coursera (Machine learning, Octave/Matlab)&lt;br /&gt;
-    4.2 Scikit-Learn online video (Jake) and tutorial   
-    4.3 Machine Learning in Action ( Algorithms and implementations using Python)&lt;br /&gt;
-    4.4 Articles and papers about deep learning&lt;br /&gt;
-    4.5 The Elements of Statistical Learning book (more theory-heavy)&lt;br /&gt;
-5. Big Data Platform (Hadoop, Spark)&lt;br /&gt;
-    5.1 Hadoop Illuminated book ( A general intro to Hadoop and MapReduce)&lt;br /&gt;
-    5.2 Intro to Hadoop and MapReduce Udacity online course&lt;br /&gt;
-    5.3 Keep reading articles about Spark. Get a big picture (writing blogs to record ideas and thoughts)&lt;br /&gt;
-    5.4 Introduction to Big Data with Apache Spark online course  &lt;br /&gt;
-6. CS Basics (Algorithms and Data Structures)&lt;br /&gt;
-    6.1 Problem Solving with Algorithms and Data Structures book (Python focus)&lt;br /&gt;
-    6.2 Leetcode OJ problems&lt;br /&gt;
-7. Statistics&lt;br /&gt;
-    7.1 Brush up statistics: read Think stats/ prob cheatsheet&lt;br /&gt;
-8. Learn DS by Doing DS!&lt;br /&gt;
-    8.1 Kaggle Competition (start from 101, and team up to participate into a real one)&lt;br /&gt;
-    8.2 Linkedin Economic Graph Competition&lt;br /&gt;
-    8.3 Side project using social data (Visualizing your results and share with friends!)&lt;br /&gt;
-9. Reaching Out and Conference&lt;br /&gt;
-    9.1 Boston Data Festival&lt;br /&gt;
-10. Broad reading&lt;br /&gt;
-    10.1 Read articles and news about DS everyday. (See another post for a thorough list of DS blog sites I enjoy)&lt;br /&gt;
-11. Data Visualization&lt;br /&gt;
-    11.1 Data Visualization and D3.js course.&lt;/p&gt;
-
-&lt;p&gt;The list keeps growing…&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/blogs/a-to-do-list.jpg&quot; alt=&quot;todo&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 07 Mar 2016 00:00:00 -0800</pubDate>
-        <link>http://shuaishao.me//2016/A-to-do-list-for-transitioning-to-data-science/</link>
-        <guid isPermaLink="true">http://shuaishao.me//2016/A-to-do-list-for-transitioning-to-data-science/</guid>
         
         <category>data</category>
         

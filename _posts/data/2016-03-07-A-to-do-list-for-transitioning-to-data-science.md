@@ -4,6 +4,8 @@ date:   2016-03-07
 categories: [data]
 tags: [data]
 ---
+![todo](/images/blogs/a-to-do-list.jpg)
+
 Back to when I made my mind to become a data scientist, I knew little about data industry, and literally nothing about machine learning and SQL. What I did have were quantitative background, problem-solving skills, and most important of all, a huge passion and curiosity for data science. I still remember how excited I was the first time I read the article 'Preparing for Insight' from Insight Data Science. I made the plan and carried on step by step and now I'm much more well equipped. There are still a lot to know and to do, but I am full of passion and curiosity. Unknown is the only known thing on this road, which I will constantly face and conquer. Here is a growing list about things I plan to do. Those have been finished are marked in red.
 
 
@@ -46,6 +48,4 @@ Back to when I made my mind to become a data scientist, I knew little about data
 11. Data Visualization  
     11.1 Data Visualization and D3.js course.  
 
-The list keeps growing...
-
-![todo](/images/blogs/a-to-do-list.jpg)  
+The list keeps growing...  

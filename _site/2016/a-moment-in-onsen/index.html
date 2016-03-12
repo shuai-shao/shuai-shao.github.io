@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>SQL - First row in each Group</title>
+  <title>温泉的一瞬</title>
   <meta name="description" content="单纯明快">
   <meta name="author" content="Shuai Shao">
   <meta name="HandheldFriendly" content="True">
@@ -43,7 +43,7 @@
   <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://shuaishao.me//2016/sql-first-row-in-each-group/">
+  <link rel="canonical" href="http://shuaishao.me//2016/a-moment-in-onsen/">
   <link rel="alternate" type="application/rss+xml" title="Shuai Shao" href="/feed.xml">
 </head>
 
@@ -138,101 +138,22 @@
         <article class="post-container post-container--single">
   <header class="post-header">
     <div class="post-meta">
-      <time datetime="7 Mar 2016" class="post-meta__date date">7 Mar 2016</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#data">data</a> <a href="/tags/#sql">sql</a> </span>
+      <time datetime="12 Mar 2016" class="post-meta__date date">12 Mar 2016</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#travel">travel</a> </span>
     </div>
-    <h3 class="post-title">SQL - First row in each Group</h3>
+    <h3 class="post-title">温泉的一瞬</h3>
   </header>
 
   <section class="post">
-    <p>Say we have a nice teacher rating website for Hogwarts students (www.castledoor.hw) and users like Harry and Hermione like to come and review their professors.  I have got a <strong>reviews</strong> table that looks like:<br />
-<!-- this part is for inserting a table, which is not convenient in markdown--></p>
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg .tg-yw4l{vertical-align:top}
-</style>
+    <p><img src="/images/blogs/onsen/onsen.jpg" alt="onsen" /><br />
+日本之行有很多愉快的经历。但是如果若干年后回忆起来，一定是这个瞬间让我记忆犹新。<br />
+东京之行的第三天，乘车到小田原市的箱根町，日本著名的温泉之乡。为了尽可能体验日本的文化，入住了这里可以看到富士山的温泉旅馆，选了只有榻榻米的和式房间。<br />
+晚上十点多钟，露天风吕只剩下了我一个人。从里面洗浴出来，被二月的晚风吹得有些冷。露天的温泉池上是氤氲的雾气，池边星星点点几盏灯也在雾气中模糊开来。<br />
+靠在流水下的石头上，身体一半在水里，一半在水上，一半温烫，一半韫凉。天气甚好，抬头便是月亮和满天的星星，远处便是隐约的富士山。赤身裸体躺在这泉水中，仿佛和自然融为一体。<br />
+突然想起了Immortal Beloved里最后的一幕。少年贝多芬在第九交响曲的背景音乐中狂奔，当ode to joy的高潮部分响起，他赤身躺在湖中，和天上的星星在湖中的倒影融为一体，和宇宙星空融为一体。<br />
+一瞬间，我仿佛体会到了那种自由。<br />
+<img src="/images/blogs/onsen/onsen2.jpg" alt="onsen2" /> 
+（温泉不能拍照，有幸在旅馆的主页上看到露天风吕的照片，还原度90% ：）</p>
 
-<table class="tg">
-  <tr>
-    <th class="tg-031e">PK_id</th>
-    <th class="tg-031e">users</th>
-    <th class="tg-031e">n_reviews</th>
-  </tr>
-  <tr>
-    <td class="tg-031e">1</td>
-    <td class="tg-031e">Harry</td>
-    <td class="tg-031e">5</td>
-  </tr>
-  <tr>
-    <td class="tg-031e">2</td>
-    <td class="tg-031e">Hermione</td>
-    <td class="tg-031e">8</td>
-  </tr>
-  <tr>
-    <td class="tg-031e">3</td>
-    <td class="tg-031e">Hermione</td>
-    <td class="tg-031e">12</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">4</td>
-    <td class="tg-yw4l">Harry</td>
-    <td class="tg-yw4l">3</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">5</td>
-    <td class="tg-yw4l">Hermione</td>
-    <td class="tg-yw4l">6</td>
-  </tr>
-</table>
-
-<p><strong>So the question is:</strong><br />
-How to get the highest number of reviews by each student?<br />
-Sample output would be:</p>
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-</style>
-
-<table class="tg">
-  <tr>
-    <th class="tg-031e">PK_id</th>
-    <th class="tg-031e">users</th>
-    <th class="tg-031e">n_reviews</th>
-  </tr>
-  <tr>
-    <td class="tg-031e">1</td>
-    <td class="tg-031e">Harry</td>
-    <td class="tg-031e">5</td>
-  </tr>
-  <tr>
-    <td class="tg-031e">3</td>
-    <td class="tg-031e">Hermione</td>
-    <td class="tg-031e">12</td>
-  </tr>
-</table>
-
-<p><strong>And the question really is:</strong> <br />
-How to select first row of each set of rows grouped with a <em>GROUP BY</em>?<br />
-<strong>Answer:</strong></p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">WITH</span> <span class="n">review_order</span> <span class="k">AS</span>
-<span class="p">(</span>
-<span class="k">SELECT</span>
-	<span class="n">PK_id</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">n_reviews</span><span class="p">,</span>
-	<span class="n">ROW_NUMBER</span><span class="p">()</span> <span class="n">OVER</span> <span class="p">(</span><span class="n">PARTITION</span> <span class="k">BY</span> <span class="n">users</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">n_reviews</span> <span class="k">DESC</span><span class="p">)</span> <span class="k">AS</span> <span class="n">rn</span>
-<span class="k">FROM</span>
-	<span class="n">reviews</span>
-<span class="p">)</span>
-<span class="k">SELECT</span>
-	<span class="n">PK_id</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">n_reviews</span>
-<span class="k">FROM</span>
-	<span class="n">review_order</span>
-<span class="k">WHERE</span>
-	<span class="n">rn</span> <span class="o">=</span> <span class="mi">1</span>
-</code></pre>
-</div>
 
   </section>
   

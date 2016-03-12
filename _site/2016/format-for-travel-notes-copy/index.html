@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>SQL - First row in each Group</title>
+  <title>游记的格式</title>
   <meta name="description" content="单纯明快">
   <meta name="author" content="Shuai Shao">
   <meta name="HandheldFriendly" content="True">
@@ -43,7 +43,7 @@
   <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://shuaishao.me//2016/sql-first-row-in-each-group/">
+  <link rel="canonical" href="http://shuaishao.me//2016/format-for-travel-notes-copy/">
   <link rel="alternate" type="application/rss+xml" title="Shuai Shao" href="/feed.xml">
 </head>
 
@@ -138,101 +138,21 @@
         <article class="post-container post-container--single">
   <header class="post-header">
     <div class="post-meta">
-      <time datetime="7 Mar 2016" class="post-meta__date date">7 Mar 2016</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#data">data</a> <a href="/tags/#sql">sql</a> </span>
+      <time datetime="11 Mar 2016" class="post-meta__date date">11 Mar 2016</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#travel">travel</a> </span>
     </div>
-    <h3 class="post-title">SQL - First row in each Group</h3>
+    <h3 class="post-title">游记的格式</h3>
   </header>
 
   <section class="post">
-    <p>Say we have a nice teacher rating website for Hogwarts students (www.castledoor.hw) and users like Harry and Hermione like to come and review their professors.  I have got a <strong>reviews</strong> table that looks like:<br />
-<!-- this part is for inserting a table, which is not convenient in markdown--></p>
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg .tg-yw4l{vertical-align:top}
-</style>
+    <p>终于要开始整理游记了。<br />
+很显然，这里不适合传照片。目前想到的解决办法是外链：<br />
+题图 + 摘要 + 游记外链 + 照片外链<br />
+题图：一张，宽长比1.618，自己拍摄<br />
+摘要: 一段（或者不要？待定）<br />
+游记外链：Evernote链接<br />
+照片外链：Flickr相册链接<br />
+Let us see how it goes.</p>
 
-<table class="tg">
-  <tr>
-    <th class="tg-031e">PK_id</th>
-    <th class="tg-031e">users</th>
-    <th class="tg-031e">n_reviews</th>
-  </tr>
-  <tr>
-    <td class="tg-031e">1</td>
-    <td class="tg-031e">Harry</td>
-    <td class="tg-031e">5</td>
-  </tr>
-  <tr>
-    <td class="tg-031e">2</td>
-    <td class="tg-031e">Hermione</td>
-    <td class="tg-031e">8</td>
-  </tr>
-  <tr>
-    <td class="tg-031e">3</td>
-    <td class="tg-031e">Hermione</td>
-    <td class="tg-031e">12</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">4</td>
-    <td class="tg-yw4l">Harry</td>
-    <td class="tg-yw4l">3</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">5</td>
-    <td class="tg-yw4l">Hermione</td>
-    <td class="tg-yw4l">6</td>
-  </tr>
-</table>
-
-<p><strong>So the question is:</strong><br />
-How to get the highest number of reviews by each student?<br />
-Sample output would be:</p>
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-</style>
-
-<table class="tg">
-  <tr>
-    <th class="tg-031e">PK_id</th>
-    <th class="tg-031e">users</th>
-    <th class="tg-031e">n_reviews</th>
-  </tr>
-  <tr>
-    <td class="tg-031e">1</td>
-    <td class="tg-031e">Harry</td>
-    <td class="tg-031e">5</td>
-  </tr>
-  <tr>
-    <td class="tg-031e">3</td>
-    <td class="tg-031e">Hermione</td>
-    <td class="tg-031e">12</td>
-  </tr>
-</table>
-
-<p><strong>And the question really is:</strong> <br />
-How to select first row of each set of rows grouped with a <em>GROUP BY</em>?<br />
-<strong>Answer:</strong></p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">WITH</span> <span class="n">review_order</span> <span class="k">AS</span>
-<span class="p">(</span>
-<span class="k">SELECT</span>
-	<span class="n">PK_id</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">n_reviews</span><span class="p">,</span>
-	<span class="n">ROW_NUMBER</span><span class="p">()</span> <span class="n">OVER</span> <span class="p">(</span><span class="n">PARTITION</span> <span class="k">BY</span> <span class="n">users</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">n_reviews</span> <span class="k">DESC</span><span class="p">)</span> <span class="k">AS</span> <span class="n">rn</span>
-<span class="k">FROM</span>
-	<span class="n">reviews</span>
-<span class="p">)</span>
-<span class="k">SELECT</span>
-	<span class="n">PK_id</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">n_reviews</span>
-<span class="k">FROM</span>
-	<span class="n">review_order</span>
-<span class="k">WHERE</span>
-	<span class="n">rn</span> <span class="o">=</span> <span class="mi">1</span>
-</code></pre>
-</div>
 
   </section>
   
