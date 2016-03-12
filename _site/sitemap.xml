@@ -3,7 +3,67 @@
   
     
     <url>
-      <loc>http://shuaishao.me/x/2016/sql-first-row-in-each-group/</loc>
+      <loc>http://shuaishao.me/2016/about-trade-offs/</loc>
+      
+        <lastmod>2016-03-10T00:00:00-08:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://shuaishao.me/2016/skiing-lake-tahoe/</loc>
+      
+        <lastmod>2016-03-08T00:00:00-08:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://shuaishao.me/2016/camera-and-lens/</loc>
+      
+        <lastmod>2016-03-08T00:00:00-08:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://shuaishao.me/2016/doppelganger/</loc>
+      
+        <lastmod>2016-03-08T00:00:00-08:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://shuaishao.me/2016/my-travel-plan/</loc>
       
         <lastmod>2016-03-07T00:00:00-08:00</lastmod>
       
@@ -18,7 +78,7 @@
   
     
     <url>
-      <loc>http://shuaishao.me/x/2016/one-month-as-a-real-data-scientist/</loc>
+      <loc>http://shuaishao.me/2016/about-me/</loc>
       
         <lastmod>2016-03-07T00:00:00-08:00</lastmod>
       
@@ -33,7 +93,7 @@
   
     
     <url>
-      <loc>http://shuaishao.me/x/2016/A-to-do-list-for-transitioning-to-data-science/</loc>
+      <loc>http://shuaishao.me/2016/sql-first-row-in-each-group/</loc>
       
         <lastmod>2016-03-07T00:00:00-08:00</lastmod>
       
@@ -48,7 +108,7 @@
   
     
     <url>
-      <loc>http://shuaishao.me/x/2016/book-list-2016/</loc>
+      <loc>http://shuaishao.me/2016/one-month-as-a-real-data-scientist/</loc>
       
         <lastmod>2016-03-07T00:00:00-08:00</lastmod>
       
@@ -63,7 +123,7 @@
   
     
     <url>
-      <loc>http://shuaishao.me/x/2016/about-me/</loc>
+      <loc>http://shuaishao.me/2016/A-to-do-list-for-transitioning-to-data-science/</loc>
       
         <lastmod>2016-03-07T00:00:00-08:00</lastmod>
       
@@ -78,9 +138,9 @@
   
     
     <url>
-      <loc>http://shuaishao.me/x/2016/my-travel-plan/</loc>
+      <loc>http://shuaishao.me/2016/book-list-2016/</loc>
       
-        <lastmod>2016-03-04T00:00:00-08:00</lastmod>
+        <lastmod>2016-03-07T00:00:00-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -94,24 +154,9 @@
   
     
     <url>
-      <loc>http://shuaishao.me/x/categories/</loc>
+      <loc>http://shuaishao.me/categories/</loc>
       
-        <lastmod>2016-03-07T16:26:20-08:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://shuaishao.me/x/feed.xml</loc>
-      
-        <lastmod>2016-03-07T16:26:20-08:00</lastmod>
+        <lastmod>2016-03-11T17:38:43-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -124,24 +169,9 @@
   
     
     <url>
-      <loc>http://shuaishao.me/x/about/</loc>
+      <loc>http://shuaishao.me/feed.xml</loc>
       
-        <lastmod>2016-03-07T16:26:20-08:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://shuaishao.me/x/books/</loc>
-      
-        <lastmod>2016-03-07T16:26:20-08:00</lastmod>
+        <lastmod>2016-03-11T17:38:43-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -154,24 +184,9 @@
   
     
     <url>
-      <loc>http://shuaishao.me/x/travel/</loc>
+      <loc>http://shuaishao.me/books/</loc>
       
-        <lastmod>2016-03-07T16:26:20-08:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://shuaishao.me/x/data/</loc>
-      
-        <lastmod>2016-03-07T16:26:20-08:00</lastmod>
+        <lastmod>2016-03-11T17:38:43-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -184,9 +199,9 @@
   
     
     <url>
-      <loc>http://shuaishao.me/x/</loc>
+      <loc>http://shuaishao.me/misc/</loc>
       
-        <lastmod>2016-03-07T16:26:20-08:00</lastmod>
+        <lastmod>2016-03-11T17:38:43-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -199,9 +214,54 @@
   
     
     <url>
-      <loc>http://shuaishao.me/x/js/main.js</loc>
+      <loc>http://shuaishao.me/travel/</loc>
       
-        <lastmod>2016-03-07T16:26:20-08:00</lastmod>
+        <lastmod>2016-03-11T17:38:43-08:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://shuaishao.me/</loc>
+      
+        <lastmod>2016-03-11T17:38:43-08:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://shuaishao.me/data/</loc>
+      
+        <lastmod>2016-03-11T17:38:43-08:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://shuaishao.me/js/main.js</loc>
+      
+        <lastmod>2016-03-11T17:38:43-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -216,9 +276,9 @@
   
     
     <url>
-      <loc>http://shuaishao.me/x/tags/</loc>
+      <loc>http://shuaishao.me/tags/</loc>
       
-        <lastmod>2016-03-07T16:26:20-08:00</lastmod>
+        <lastmod>2016-03-11T17:38:43-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>

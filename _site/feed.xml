@@ -1,13 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Shuai</title>
-    <description>Personal space</description>
-    <link>http://shuaishao.me/x/x//</link>
-    <atom:link href="http://shuaishao.me/x/x//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 07 Mar 2016 16:26:20 -0800</pubDate>
-    <lastBuildDate>Mon, 07 Mar 2016 16:26:20 -0800</lastBuildDate>
+    <title>Shuai Shao</title>
+    <description>单纯明快</description>
+    <link>http://shuaishao.me//</link>
+    <atom:link href="http://shuaishao.me//feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 11 Mar 2016 17:38:43 -0800</pubDate>
+    <lastBuildDate>Fri, 11 Mar 2016 17:38:43 -0800</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
+    
+      <item>
+        <title>About trade-offs in data science</title>
+        <description>&lt;p&gt;最近体会到，做好数据科学，需要很多权衡。&lt;br /&gt;
+理论正确和实际可行的权衡，质量和效率的权衡，完整和简洁的权衡。。。  &lt;br /&gt;
+很多时候，权衡需要的不是理论知识，而是经验和感觉，因为没有那么多时间对每一件事情做分析。这种感觉和经验需要时间和有意识的培养。  &lt;br /&gt;
+其他很多方面也一样，生活中太analytical可能不是最优的方式。如果可以定义一个生活的绩效函数，懂得权衡和取舍，在该严谨的时候严谨，该通融的时候通融，可能才是最优化此函数的点。&lt;br /&gt;
+一个简单的例子，当向别人讲解东西的时候，牺牲一些严谨性，做一些不那么恰当的类比，反而可以让别人更快得到要点。&lt;br /&gt;
+至少这一切努力，都比面对着残缺不全的数据（生活面貌）叹气的好。至少，&lt;br /&gt;
+你所做的一切，都让现在的生活，变得好了那么一些。&lt;/p&gt;
+</description>
+        <pubDate>Thu, 10 Mar 2016 00:00:00 -0800</pubDate>
+        <link>http://shuaishao.me//2016/about-trade-offs/</link>
+        <guid isPermaLink="true">http://shuaishao.me//2016/about-trade-offs/</guid>
+        
+        <category>misc</category>
+        
+        
+        <category>about</category>
+        
+      </item>
+    
+      <item>
+        <title>太浩湖滑雪</title>
+        <description>&lt;p&gt;其实我只是在实验博客里图片的最佳比例。&lt;br /&gt;
+这是1：1的观感：&lt;br /&gt;
+&lt;img src=&quot;/images/blogs/tahoe/tahoe-2-2.jpg&quot; alt=&quot;image1-1&quot; /&gt;  &lt;br /&gt;
+这是3：2的观感：&lt;br /&gt;
+&lt;img src=&quot;/images/blogs/tahoe/tahoe-3-2.jpg&quot; alt=&quot;image3-2&quot; /&gt;&lt;br /&gt;
+这是4：3的观感：&lt;br /&gt;
+&lt;img src=&quot;/images/blogs/tahoe/tahoe-4-3.jpg&quot; alt=&quot;image4-3&quot; /&gt;&lt;br /&gt;
+这是5：3的观感： 
+&lt;img src=&quot;/images/blogs/tahoe/tahoe-5-3.jpg&quot; alt=&quot;image5-3&quot; /&gt;&lt;br /&gt;
+这是5：4的观感：&lt;br /&gt;
+&lt;img src=&quot;/images/blogs/tahoe/tahoe-5-4.jpg&quot; alt=&quot;image5-4&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;我猜想比例在黄金分割（1.618）附近会比较美观。事实证明也是如此。所以比例应该尽量精确固定在1.618附近。   &lt;br /&gt;
+原图没有经过压缩，每张的大小在2-3 MB， 五张图已经使网页刷新速度变慢。。。还是需要在不影响观感的情况下，压缩在100K以下。&lt;br /&gt;
+主页每个类别预览处需要重新写代码，看起来太烂。&lt;br /&gt;
+长久来看，游记的照片需要存在一个可靠的地方，提供链接即可。&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 08 Mar 2016 00:00:00 -0800</pubDate>
+        <link>http://shuaishao.me//2016/skiing-lake-tahoe/</link>
+        <guid isPermaLink="true">http://shuaishao.me//2016/skiing-lake-tahoe/</guid>
+        
+        <category>travel</category>
+        
+        <category>photography</category>
+        
+        
+        <category>travel</category>
+        
+      </item>
+    
+      <item>
+        <title>相机和镜头的选择</title>
+        <description>&lt;p&gt;自从上一个单反被偷，之后就一直用手机拍。&lt;br /&gt;
+好处自然是方便，在旅行过程中也比较便于携带，不用为了拍照牺牲游玩的兴致。&lt;br /&gt;
+然而看见好照片还是会激动啊。就凭这点激动，是时候入一个好点的相机了吧。加上整理照片时，手机拍的照片在电脑屏幕上真是惨不忍睹。既然把旅行作为新年的resolution之一，就没有必要不做好；所以，重新入坑。&lt;br /&gt;
+相机基本确定是Sony A7ii。考虑黑科技和性价比，A7ii是我现在最想入的机器。索尼大法好：）&lt;br /&gt;
+那么问题来了：如果只考虑一只定焦挂机的话，选什么焦段的什么镜头？&lt;br /&gt;
+现在犹豫的主要是50还是35. 全画幅上，50更适合人文，人像，静物等；而35更适合人文，抓拍，街景等。考虑到我目前最需要的照片风格，自己的技术，第一支倾向于入50。&lt;br /&gt;
+看了网上的评价，综合一下，决定入原产的FE55mm f1.8。性能，重量，画质，性价比一流，可以符合一机一镜的要求。&lt;br /&gt;
+A7ii + FE55 1.8, 目前最优组合。什么都好，只是，价钱感人。&lt;br /&gt;
+那么，多拍几张好照片吧。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/cherryblossom.jpg&quot; alt=&quot;headimage&quot; /&gt;
+(照片来自别人的博客，只因我也在目黑川看过樱花)&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 08 Mar 2016 00:00:00 -0800</pubDate>
+        <link>http://shuaishao.me//2016/camera-and-lens/</link>
+        <guid isPermaLink="true">http://shuaishao.me//2016/camera-and-lens/</guid>
+        
+        <category>travel</category>
+        
+        <category>photography</category>
+        
+        
+        <category>travel</category>
+        
+      </item>
+    
+      <item>
+        <title>Doppelganger</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://blog.sina.com.cn/u/2024022614&quot; target=&quot;_blank&quot;&gt;http://blog.sina.com.cn/u/2024022614&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 08 Mar 2016 00:00:00 -0800</pubDate>
+        <link>http://shuaishao.me//2016/doppelganger/</link>
+        <guid isPermaLink="true">http://shuaishao.me//2016/doppelganger/</guid>
+        
+        <category>about</category>
+        
+        
+        <category>about</category>
+        
+      </item>
+    
+      <item>
+        <title>2016-我的旅行计划</title>
+        <description>&lt;p&gt;日本：二月。&lt;br /&gt;
+波士顿：五月。&lt;br /&gt;
+加拿大：待定。看家人。&lt;br /&gt;
+英国：冬天，待定。在教授离开前看一场兵工厂的比赛。&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 07 Mar 2016 00:00:00 -0800</pubDate>
+        <link>http://shuaishao.me//2016/my-travel-plan/</link>
+        <guid isPermaLink="true">http://shuaishao.me//2016/my-travel-plan/</guid>
+        
+        <category>travel</category>
+        
+        
+        <category>travel</category>
+        
+      </item>
+    
+      <item>
+        <title>About me, about this blog</title>
+        <description>&lt;p&gt;About me:&lt;br /&gt;
+  A physicist.&lt;br /&gt;
+  A data scientist.&lt;br /&gt;
+  A minimalist.&lt;br /&gt;
+  Less is more.&lt;/p&gt;
+
+&lt;p&gt;About this blog:&lt;br /&gt;
+  Hosted on Github.&lt;br /&gt;
+  Created using Jekyll. 
+  Blogged in English and Chinese.   &lt;br /&gt;
+  About things I enjoy.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 07 Mar 2016 00:00:00 -0800</pubDate>
+        <link>http://shuaishao.me//2016/about-me/</link>
+        <guid isPermaLink="true">http://shuaishao.me//2016/about-me/</guid>
+        
+        <category>misc</category>
+        
+        
+        <category>about</category>
+        
+      </item>
     
       <item>
         <title>SQL - First row in each Group</title>
@@ -43,8 +185,8 @@ How to select first row of each set of rows grouped with a &lt;em&gt;GROUP BY&l
 &lt;/div&gt;
 </description>
         <pubDate>Mon, 07 Mar 2016 00:00:00 -0800</pubDate>
-        <link>http://shuaishao.me/x/x//2016/sql-first-row-in-each-group/</link>
-        <guid isPermaLink="true">http://shuaishao.me/x/x//2016/sql-first-row-in-each-group/</guid>
+        <link>http://shuaishao.me//2016/sql-first-row-in-each-group/</link>
+        <guid isPermaLink="true">http://shuaishao.me//2016/sql-first-row-in-each-group/</guid>
         
         <category>data</category>
         
@@ -78,16 +220,16 @@ Black box! Secret weapon!&lt;br /&gt;
 7. Tableau (data delivery / visualization)&lt;br /&gt;
 Deliver your insights and results in a neat and actionable manner.&lt;br /&gt;
 Some skills I want to learn but are not emphasized here include big data platform (Spark especially), interactive data visualization (D3), and database knowledge. So, here are three online courses that can get my feet wet. Play with them in my free time!&lt;br /&gt;
-1. &lt;a href=&quot;https://www.edx.org/course/introduction-big-data-apache-spark-uc-berkeleyx-cs100-1x&quot;&gt;Introduction to Big Data with Apache Spark&lt;/a&gt;&lt;br /&gt;
-2. &lt;a href=&quot;https://www.udacity.com/course/data-visualization-and-d3js--ud507&quot;&gt;Data Visualization and D3.js&lt;/a&gt;&lt;br /&gt;
-3. &lt;a href=&quot;https://lagunita.stanford.edu/courses/Engineering/db/2014_1/about&quot;&gt;Introduction to Databases&lt;/a&gt;&lt;/p&gt;
+1. &lt;a href=&quot;https://www.edx.org/course/introduction-big-data-apache-spark-uc-berkeleyx-cs100-1x&quot; target=&quot;_blank&quot;&gt;Introduction to Big Data with Apache Spark&lt;/a&gt;  &lt;br /&gt;
+2. &lt;a href=&quot;https://www.udacity.com/course/data-visualization-and-d3js--ud507&quot; target=&quot;_blank&quot;&gt;Data Visualization and D3.js&lt;/a&gt;  &lt;br /&gt;
+3. &lt;a href=&quot;https://lagunita.stanford.edu/courses/Engineering/db/2014_1/about&quot; target=&quot;_blank&quot;&gt;Introduction to Databases&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogs/braceyourself.jpg&quot; alt=&quot;braceyourself&quot; /&gt;&lt;br /&gt;
 Have fun!&lt;/p&gt;
 </description>
         <pubDate>Mon, 07 Mar 2016 00:00:00 -0800</pubDate>
-        <link>http://shuaishao.me/x/x//2016/one-month-as-a-real-data-scientist/</link>
-        <guid isPermaLink="true">http://shuaishao.me/x/x//2016/one-month-as-a-real-data-scientist/</guid>
+        <link>http://shuaishao.me//2016/one-month-as-a-real-data-scientist/</link>
+        <guid isPermaLink="true">http://shuaishao.me//2016/one-month-as-a-real-data-scientist/</guid>
         
         <category>data</category>
         
@@ -144,8 +286,8 @@ Have fun!&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/images/blogs/a-to-do-list.jpg&quot; alt=&quot;todo&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 07 Mar 2016 00:00:00 -0800</pubDate>
-        <link>http://shuaishao.me/x/x//2016/A-to-do-list-for-transitioning-to-data-science/</link>
-        <guid isPermaLink="true">http://shuaishao.me/x/x//2016/A-to-do-list-for-transitioning-to-data-science/</guid>
+        <link>http://shuaishao.me//2016/A-to-do-list-for-transitioning-to-data-science/</link>
+        <guid isPermaLink="true">http://shuaishao.me//2016/A-to-do-list-for-transitioning-to-data-science/</guid>
         
         <category>data</category>
         
@@ -170,50 +312,15 @@ Have fun!&lt;/p&gt;
 - &lt;a href=&quot;https://book.douban.com/subject/6783783/&quot; target=&quot;_blank&quot;&gt;人类群星闪耀时&lt;/a&gt; &lt;br /&gt;
 - To be continued&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blogs/bookpic.jpg&quot; alt=&quot;bookpic&quot; /&gt;&lt;/p&gt;
-
 </description>
         <pubDate>Mon, 07 Mar 2016 00:00:00 -0800</pubDate>
-        <link>http://shuaishao.me/x/x//2016/book-list-2016/</link>
-        <guid isPermaLink="true">http://shuaishao.me/x/x//2016/book-list-2016/</guid>
+        <link>http://shuaishao.me//2016/book-list-2016/</link>
+        <guid isPermaLink="true">http://shuaishao.me//2016/book-list-2016/</guid>
         
         <category>books</category>
         
         
         <category>books</category>
-        
-      </item>
-    
-      <item>
-        <title>A bit about me</title>
-        <description>&lt;p&gt;I’m a physicist and aspiring data scientist.&lt;br /&gt;
-I am curious about this world and enjoy solving challenging problems using my logic and thinking.&lt;br /&gt;
-My research focuses on data-driven statistical analysis and mathematical modeling of complex networks. After several years’ study of hard-core science, I am ready to get my hands dirty and make some real-world impact in data science. &lt;/p&gt;
-</description>
-        <pubDate>Mon, 07 Mar 2016 00:00:00 -0800</pubDate>
-        <link>http://shuaishao.me/x/x//2016/about-me/</link>
-        <guid isPermaLink="true">http://shuaishao.me/x/x//2016/about-me/</guid>
-        
-        <category>about</category>
-        
-        
-        <category>about</category>
-        
-      </item>
-    
-      <item>
-        <title>My travel plan</title>
-        <description>&lt;p&gt;日本：done&lt;br /&gt;
-英国：to be done&lt;/p&gt;
-</description>
-        <pubDate>Fri, 04 Mar 2016 00:00:00 -0800</pubDate>
-        <link>http://shuaishao.me/x/x//2016/my-travel-plan/</link>
-        <guid isPermaLink="true">http://shuaishao.me/x/x//2016/my-travel-plan/</guid>
-        
-        <category>travel</category>
-        
-        
-        <category>travel</category>
         
       </item>
     
