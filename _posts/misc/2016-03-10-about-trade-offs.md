@@ -1,7 +1,7 @@
 ---
 title:  "About trade-offs in data science"
 date:   2016-03-10
-categories: [about]
+categories: [misc]
 tags: [misc]
 ---
 最近体会到，做好数据科学，需要很多权衡。  

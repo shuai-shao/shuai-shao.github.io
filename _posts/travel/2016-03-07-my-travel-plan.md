@@ -4,6 +4,7 @@ date:   2016-03-07
 categories: [travel]
 tags: [travel]
 ---
+![magnets](/images/blogs/magnets.jpg)
 日本：二月。  
 波士顿：五月。  
 加拿大：待定。看家人。  
