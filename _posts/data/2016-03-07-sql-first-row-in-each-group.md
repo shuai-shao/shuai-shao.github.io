@@ -92,3 +92,5 @@ FROM
 WHERE
 	rn = 1
 ``` 
+
+* This only works in MS SQL and Oracle, not in MySQL.
