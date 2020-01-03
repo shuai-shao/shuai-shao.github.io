@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>A good introduction to random forest</title>
+  <meta name="description" content="单纯明快">
+  <meta name="author" content="Shuai Shao">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Shuai Shao">
+  <meta name="twitter:description" content="单纯明快">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Shuai Shao">
+  <meta property="og:description" content="单纯明快">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/images/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/images/favicons/manifest.json">
+  <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000//2016/introrf/">
+  <link rel="alternate" type="application/rss+xml" title="Shuai Shao" href="/feed.xml">
+</head>
+
+
+  <body>
+    <span class="mobile btn-mobile-menu">
+  <i class="icon icon-list btn-mobile-menu__icon"></i>
+  <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+</span>
+  
+<header class="panel-cover" style="background-image: url(/images/cover.jpg)">
+  <div class="panel-main">
+
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+        <a href="/" title="link to home of Shuai Shao">
+          <img src="/images/profile.jpg" class="user-image" alt="My Profile Photo">
+          <h1 class="panel-cover__title panel-title">Shuai Shao</h1>
+        </a>
+        <hr class="panel-cover__divider">
+    <!-- hide description for now  
+        <p class="panel-cover__description">单纯明快</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
+    -->
+        <div class="navigation-wrapper">
+        <nav class="cover-navigation cover-navigation--primary">
+          <ul class="navigation">
+          <li class="navigation__item"><a href="/data" class="blog-button">Data</a></li>
+          <li class="navigation__item"><a href="/books" class="blog-button">Books</a></li>
+          <li class="navigation__item"><a href="/travel" class="blog-button">Travel</a></li>
+          <li class="navigation__item"><a href="/misc" class="blog-button">Misc</a></li>
+          </ul>
+        </nav>
+
+      <hr class="panel-cover__divider">
+
+          <nav class="cover-navigation navigation--social">
+            <ul class="navigation">
+          
+            
+
+            
+
+            
+              <!-- LinkedIn -->
+              <li class="navigation__item">
+                <a href="https://www.linkedin.com/in/shuaishao1" title="shuaishao1 on LinkedIn" target="_blank">
+                  <i class="icon icon-social-linkedin"></i>
+                  <span class="label">LinkedIn</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- GitHub -->
+              <li class="navigation__item">
+                <a href="https://www.github.com/shuai-shao" title="shuai-shao on GitHub" target="_blank">
+                  <i class="icon icon-social-github"></i>
+                  <span class="label">GitHub</span>
+                </a>
+              </li>
+            
+
+            
+
+          <!-- RSS
+            <li class="navigation__item">
+              <a href="/feed.xml" title="Subscribe" target="_blank">
+                <i class="icon icon-rss"></i>
+                <span class="label">RSS</span>
+              </a>
+            </li>
+            -->
+
+          
+            </ul>
+          </nav>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+
+    <div class="content-wrapper">
+      <div class="content-wrapper__inner">
+        <article class="post-container post-container--single">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="22 Sep 2016" class="post-meta__date date">22 Sep 2016</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#data">data</a> </span>
+    </div>
+    <h3 class="post-title">A good introduction to random forest</h3>
+  </header>
+
+  <section class="post">
+    <p>Saw a pretty good introduction to random forest today:<br />
+http://blog.echen.me/2011/03/14/laymans-introduction-to-random-forests/<br />
+—<br />
+Suppose you’re very indecisive, so whenever you want to watch a movie, you ask your friend Willow if she thinks you’ll like it. In order to answer, Willow first needs to figure out what movies you like, so you give her a bunch of movies and tell her whether you liked each one or not (i.e., you give her a labeled training set). Then, when you ask her if she thinks you’ll like movie X or not, she plays a 20 questions-like game with IMDB, asking questions like “Is X a romantic movie?”, “Does Johnny Depp star in X?”, and so on. She asks more informative questions first (i.e., she maximizes the information gain of each question), and gives you a yes/no answer at the end.</p>
+
+<p>Thus, Willow is a decision tree for your movie preferences.</p>
+
+<p>But Willow is only human, so she doesn’t always generalize your preferences very well (i.e., she overfits). In order to get more accurate recommendations, you’d like to ask a bunch of your friends, and watch movie X if most of them say they think you’ll like it. That is, instead of asking only Willow, you want to ask Woody, Apple, and Cartman as well, and they vote on whether you’ll like a movie (i.e., you build an ensemble classifier, aka a forest in this case).</p>
+
+<p>Now you don’t want each of your friends to do the same thing and give you the same answer, so you first give each of them slightly different data. After all, you’re not absolutely sure of your preferences yourself – you told Willow you loved Titanic, but maybe you were just happy that day because it was your birthday, so maybe some of your friends shouldn’t use the fact that you liked Titanic in making their recommendations. Or maybe you told her you loved Cinderella, but actually you really really loved it, so some of your friends should give Cinderella more weight. So instead of giving your friends the same data you gave Willow, you give them slightly perturbed versions. You don’t change your love/hate decisions, you just say you love/hate some movies a little more or less (formally, you give each of your friends a bootstrapped version of your original training data). For example, whereas you told Willow that you liked Black Swan and Harry Potter and disliked Avatar, you tell Woody that you liked Black Swan so much you watched it twice, you disliked Avatar, and don’t mention Harry Potter at all.</p>
+
+<p>By using this ensemble, you hope that while each of your friends gives somewhat idiosyncratic recommendations (Willow thinks you like vampire movies more than you do, Woody thinks you like Pixar movies, and Cartman thinks you just hate everything), the errors get canceled out in the majority. Thus, your friends now form a bagged (bootstrap aggregated) forest of your movie preferences.</p>
+
+<p>There’s still one problem with your data, however. While you loved both Titanic and Inception, it wasn’t because you like movies that star Leonardio DiCaprio. Maybe you liked both movies for other reasons. Thus, you don’t want your friends to all base their recommendations on whether Leo is in a movie or not. So when each friend asks IMDB a question, only a random subset of the possible questions is allowed (i.e., when you’re building a decision tree, at each node you use some randomness in selecting the attribute to split on, say by randomly selecting an attribute or by selecting an attribute from a random subset). This means your friends aren’t allowed to ask whether Leonardo DiCaprio is in the movie whenever they want. So whereas previously you injected randomness at the data level, by perturbing your movie preferences slightly, now you’re injecting randomness at the model level, by making your friends ask different questions at different times.</p>
+
+<p>And so your friends now form a random forest.</p>
+
+  </section>
+  
+</article>
+
+
+
+      </div>
+
+      <footer class="footer">
+  <span class="footer__copyright">&copy; 2020 Shuai Shao. All rights reserved.</span>
+</footer> 
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+    </div>
+  </body>
+</html>

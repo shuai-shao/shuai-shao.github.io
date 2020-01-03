@@ -3,69 +3,82 @@
   <channel>
     <title>Shuai Shao</title>
     <description>单纯明快</description>
-    <link>http://shuaishao.me//</link>
-    <atom:link href="http://shuaishao.me//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 13 Mar 2016 18:48:12 -0700</pubDate>
-    <lastBuildDate>Sun, 13 Mar 2016 18:48:12 -0700</lastBuildDate>
-    <generator>Jekyll v3.0.2</generator>
+    <link>http://localhost:4000//</link>
+    <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Thu, 02 Jan 2020 21:34:40 -0800</pubDate>
+    <lastBuildDate>Thu, 02 Jan 2020 21:34:40 -0800</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
     
       <item>
-        <title>Next stage DS learning</title>
-        <description>&lt;ul&gt;
-  &lt;li&gt;Stats and machine learning:
+        <title>Interesting Research Topics</title>
+        <description>&lt;p&gt;1.Explainability of Deep Learning&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Ranking problems&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Sun, 27 Oct 2019 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000//2019/research_topicsmd/</link>
+        <guid isPermaLink="true">http://localhost:4000//2019/research_topicsmd/</guid>
+        
+        <category>data</category>
+        
+        <category>machine learning</category>
+        
+        <category>statistics</category>
+        
+        
+        <category>data</category>
+        
+      </item>
+    
+      <item>
+        <title>Singular-value Decomposition</title>
+        <description>&lt;p&gt;Singular-value Decomposition is widely used in collaborative filtering.&lt;br /&gt;
+Imagine you are building a recommendation system for recommending books to users. You have m users and n potential books to recommend. You also have some historical ratings of some users on some books.&lt;br /&gt;
+Based on this, you can formulate a utility matrix where each row represents a user and each column represents a book. You can, of course, calculate the correlation between users or books and recommend based on a correlation weighted ratings average, but the problem with that is the matrix is very sparse (you have lots of empty entries), and the process is very computationally expensive (hard to scale).&lt;br /&gt;
+An idea to resolve this is to factorize the utility matrix using singular-value decomposition. By using, you can decompose the m&lt;em&gt;n matrix into three matrices: A = USV^T - m&lt;/em&gt;n = (m&lt;em&gt;k) * (k&lt;/em&gt;k) * (k*n). The idea is to do dimension reduction by extracting  latent factors from the utility matrix (and hopefully still preserves most variance). Intuitively, this is similar to finding a low dimensional manifold out of a high dimensional space. By doing so, you are able to represent information in a condenser way, and thus mitigate the data sparsity and computationally issue.&lt;br /&gt;
+Following up on the above book recommendation example. Intuitively what we are doing here is finding k most ‘important’ features and project users and books onto the k-dimensional space these k features define. For example, one feature could be the genre of the book, another could be the language of the book. Both U and V are singular matrices. Each row of U represents an eigenvector for a user. Each column of V^T represents an eigenvector for a book. S is a diagonal matrix and each diagonal entry represents an eigenvalue (strength of the latent factor). The predicted rating from user i to book j will simply be a summation of the projection of i on dimension k, projection of j on dimension k, and the strength of dimension k over all k dimensions.&lt;br /&gt;
+(Get the picture right, and SVD is easy to understand)&lt;/p&gt;
+</description>
+        <pubDate>Mon, 25 Jun 2018 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000//2018/label_propagation/</link>
+        <guid isPermaLink="true">http://localhost:4000//2018/label_propagation/</guid>
+        
+        <category>data</category>
+        
+        
+        <category>data</category>
+        
+      </item>
+    
+      <item>
+        <title>Label Propagation</title>
+        <description>&lt;p&gt;Label propagation&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition&lt;/strong&gt;
+Label propagation is a semi-supervised learning algorithm that assigns labels to previously unlabeled data points. It is a type of transductive learning.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Label Propagation on Graphs&lt;/strong&gt;
+Only a subset of nodes in a graph is labeled. The task is to label  all nodes in a graph structure.  The underlying assumption is that linked nodes are correlated.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Math&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Zoubin:
     &lt;ul&gt;
-      &lt;li&gt;An Introduction to Statistical Learning book&lt;/li&gt;
-      &lt;li&gt;A stats book, TBD&lt;/li&gt;
-      &lt;li&gt;Natural Language Processing with Python book&lt;/li&gt;
+      &lt;li&gt;learning from labeled and unlabeled data with label propagation (paper) (http://mlg.eng.cam.ac.uk/zoubin/papers/CMU-CALD-02-107.pdf)&lt;/li&gt;
+      &lt;li&gt;graph based semi-supervised learning (slides) (http://mlg.eng.cam.ac.uk/zoubin/talks/lect3ssl.pdf)&lt;/li&gt;
+      &lt;li&gt;graph based semi-supervised learning (video) (https://www.youtube.com/watch?v=HZQOvm0fkLA)&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;Analytics:
-    &lt;ul&gt;
-      &lt;li&gt;Lean Analytics book&lt;/li&gt;
-      &lt;li&gt;Think more in projects: how to make decisions based on number&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Data visualization:
-    &lt;ul&gt;
-      &lt;li&gt;D3 website is the best place to learn:
-        &lt;ul&gt;
-          &lt;li&gt;Mike’s tutorials and talks&lt;/li&gt;
-          &lt;li&gt;D3 github examples&lt;/li&gt;
-          &lt;li&gt;API documentations&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;http://multithreaded.stitchfix.com/blog/2015/12/15/d3-jupyter/&quot;&gt;D3 in Jupyter&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Effective visualization and design rules:
-        &lt;ul&gt;
-          &lt;li&gt;UDACITY 7-weeks Data visualization and D3.js course&lt;/li&gt;
-          &lt;li&gt;Check Edward Tufte and Leland Wilkinson’s books and decide&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Interface between Python and D3:
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;http://blog.thedataincubator.com/2015/08/embedding-d3-in-an-ipython-notebook/&quot;&gt;Embedding D3 in IPython notebook&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Data / Big data techniques:
-    &lt;ul&gt;
-      &lt;li&gt;Introduction to Big Data with Apache Spark course&lt;/li&gt;
-      &lt;li&gt;Learning Spark book&lt;/li&gt;
-      &lt;li&gt;Learn Tensorflow and use in projects (google TensorFlow course)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Hypothesis testing / AB testing:
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;http://multithreaded.stitchfix.com/blog/2015/05/26/significant-sample/&quot;&gt;Singnificant sample&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://multithreaded.stitchfix.com/blog/2015/10/15/multiple-hypothesis-testing/&quot;&gt;Multiple hypothesis testing&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
+  &lt;li&gt;Zhukov, label propagation on graphs: slides (http://www.leonidzhukov.net/hse/2015/networks/lectures/lecture17.pdf), video1, (https://www.youtube.com/watch?v=hmashUPJwSQ&amp;amp;t=804s) video2 (https://www.youtube.com/watch?v=F4f247IyOTs&amp;amp;t=2699s)&lt;/li&gt;
+  &lt;li&gt;semi-supervised learning literature survey (http://pages.cs.wisc.edu/~jerryzhu/pub/ssl_survey.pdf)&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Sun, 13 Mar 2016 00:00:00 -0800</pubDate>
-        <link>http://shuaishao.me//2016/next-stage-ds-learning/</link>
-        <guid isPermaLink="true">http://shuaishao.me//2016/next-stage-ds-learning/</guid>
+        <pubDate>Fri, 15 Jun 2018 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000//2018/SVD/</link>
+        <guid isPermaLink="true">http://localhost:4000//2018/SVD/</guid>
         
         <category>data</category>
         
@@ -75,65 +88,39 @@
       </item>
     
       <item>
-        <title>温泉的一瞬</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/images/blogs/onsen/onsen.jpg&quot; alt=&quot;onsen&quot; /&gt;&lt;br /&gt;
-日本之行有很多愉快的经历。但是如果若干年后回忆起来，一定是这个瞬间让我记忆犹新。&lt;br /&gt;
-东京之行的第三天，乘车到小田原市的箱根町，日本著名的温泉之乡。为了尽可能体验日本的文化，入住了这里可以看到富士山的温泉旅馆，选了只有榻榻米的和式房间。&lt;br /&gt;
-晚上十点多钟，露天风吕只剩下了我一个人。从里面洗浴出来，被二月的晚风吹得有些冷。露天的温泉池上是氤氲的雾气，池边星星点点几盏灯也在雾气中模糊开来。&lt;br /&gt;
-靠在流水下的石头上，身体一半在水里，一半在水上，一半温烫，一半韫凉。天气甚好，抬头便是月亮和满天的星星，远处便是隐约的富士山。赤身裸体躺在这泉水中，仿佛和自然融为一体。&lt;br /&gt;
-突然想起了Immortal Beloved里最后的一幕。少年贝多芬在第九交响曲的背景音乐中狂奔，当ode to joy的高潮部分响起，他赤身躺在湖中，和天上的星星在湖中的倒影融为一体，和宇宙星空融为一体。&lt;br /&gt;
-一瞬间，我仿佛体会到了那种自由。&lt;br /&gt;
-&lt;img src=&quot;/images/blogs/onsen/onsen2.jpg&quot; alt=&quot;onsen2&quot; /&gt; 
-（温泉不能拍照，有幸在旅馆的主页上看到露天风吕的照片，还原度90% ：）&lt;/p&gt;
-
+        <title>2018读书计划和书单</title>
+        <description>&lt;p&gt;2018：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Longitude-Genius-Greatest-Scientific-Problem/dp/080271529X&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;The longitude&lt;/strong&gt;&lt;/a&gt;: 8/10&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Housekeeper-Professor-Yoko-Ogawa/dp/0312427808&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;The housekeeper and the professor&lt;/strong&gt;&lt;/a&gt;: 7/10&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Then-There-Were-None/dp/0062073486&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;And then there were none&lt;/strong&gt;&lt;/a&gt;: 8/10&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Bit-Social-Research-Digital-Age/dp/0691158649&quot; target=&quot;_blank&quot;&gt;Bit by bit&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Getting-Yes-Negotiating-Agreement-Without/dp/0140157352&quot; target=&quot;_blank&quot;&gt;Getting to yes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Idea-Factory-Great-American-Innovation/dp/0143122797&quot; target=&quot;_blank&quot;&gt;The idea factory&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
-        <pubDate>Sat, 12 Mar 2016 00:00:00 -0800</pubDate>
-        <link>http://shuaishao.me//2016/a-moment-in-onsen/</link>
-        <guid isPermaLink="true">http://shuaishao.me//2016/a-moment-in-onsen/</guid>
+        <pubDate>Fri, 15 Jun 2018 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000//2018/book-list-2018/</link>
+        <guid isPermaLink="true">http://localhost:4000//2018/book-list-2018/</guid>
         
-        <category>travel</category>
+        <category>books</category>
         
         
-        <category>travel</category>
+        <category>books</category>
         
       </item>
     
       <item>
-        <title>游记的格式</title>
-        <description>&lt;p&gt;终于要开始整理游记了。&lt;br /&gt;
-很显然，这里不适合传照片。目前想到的解决办法是外链：&lt;br /&gt;
-题图 + 摘要 + 游记外链 + 照片外链&lt;br /&gt;
-题图：一张，宽长比1.618，自己拍摄&lt;br /&gt;
-摘要: 一段（或者不要？待定）&lt;br /&gt;
-游记外链：Evernote链接&lt;br /&gt;
-照片外链：Flickr相册链接&lt;br /&gt;
-Let us see how it goes.&lt;/p&gt;
-
+        <title>30%与100%</title>
+        <description>&lt;p&gt;对我来说，30%是很容易放弃的时候。&lt;br /&gt;
+6mile的trail，往往一迈多的时候就不想爬了。工作也是：  &lt;br /&gt;
+前20%是蜜月期，借着新鲜感和鸡血往往每天早上还能很high地满血复活；进入四五个月以后，就疲态略显。 
+然而我也是度过了30%就越爬越high的人，70%－100%阶段的快感是最大的。&lt;br /&gt;
+再想想自己的初心，再坚持一下，再努力一点。&lt;/p&gt;
 </description>
-        <pubDate>Fri, 11 Mar 2016 00:00:00 -0800</pubDate>
-        <link>http://shuaishao.me//2016/format-for-travel-notes/</link>
-        <guid isPermaLink="true">http://shuaishao.me//2016/format-for-travel-notes/</guid>
-        
-        <category>travel</category>
-        
-        
-        <category>travel</category>
-        
-      </item>
-    
-      <item>
-        <title>About trade-offs in data science</title>
-        <description>&lt;p&gt;最近体会到，做好数据科学，需要很多权衡。&lt;br /&gt;
-理论正确和实际可行的权衡，质量和效率的权衡，完整和简洁的权衡。。。  &lt;br /&gt;
-很多时候，权衡需要的不是理论知识，而是经验和感觉，因为没有那么多时间对每一件事情做分析。这种感觉和经验需要时间和有意识的培养。  &lt;br /&gt;
-其他很多方面也一样，生活中太analytical可能不是最优的方式。如果可以定义一个生活的绩效函数，懂得权衡和取舍，在该严谨的时候严谨，该通融的时候通融，可能才是最优化此函数的点。&lt;br /&gt;
-一个简单的例子，当向别人讲解东西的时候，牺牲一些严谨性，做一些不那么恰当的类比，反而可以让别人更快得到要点。&lt;br /&gt;
-至少这一切努力，都比面对着残缺不全的数据（生活面貌）叹气的好。至少，&lt;br /&gt;
-你所做的一切，都让现在的生活，变得好了那么一些。&lt;/p&gt;
-</description>
-        <pubDate>Thu, 10 Mar 2016 00:00:00 -0800</pubDate>
-        <link>http://shuaishao.me//2016/about-trade-offs/</link>
-        <guid isPermaLink="true">http://shuaishao.me//2016/about-trade-offs/</guid>
+        <pubDate>Wed, 29 Mar 2017 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000//2017/work-30_percent/</link>
+        <guid isPermaLink="true">http://localhost:4000//2017/work-30_percent/</guid>
         
         <category>misc</category>
         
@@ -143,74 +130,18 @@ Let us see how it goes.&lt;/p&gt;
       </item>
     
       <item>
-        <title>太浩湖滑雪</title>
-        <description>&lt;p&gt;其实我只是在实验博客里图片的最佳比例。&lt;br /&gt;
-这是1：1的观感：&lt;br /&gt;
-&lt;img src=&quot;/images/blogs/tahoe/tahoe-2-2.jpg&quot; alt=&quot;image1-1&quot; /&gt;  &lt;br /&gt;
-这是3：2的观感：&lt;br /&gt;
-&lt;img src=&quot;/images/blogs/tahoe/tahoe-3-2.jpg&quot; alt=&quot;image3-2&quot; /&gt;&lt;br /&gt;
-这是4：3的观感：&lt;br /&gt;
-&lt;img src=&quot;/images/blogs/tahoe/tahoe-4-3.jpg&quot; alt=&quot;image4-3&quot; /&gt;&lt;br /&gt;
-这是5：3的观感： 
-&lt;img src=&quot;/images/blogs/tahoe/tahoe-5-3.jpg&quot; alt=&quot;image5-3&quot; /&gt;&lt;br /&gt;
-这是5：4的观感：&lt;br /&gt;
-&lt;img src=&quot;/images/blogs/tahoe/tahoe-5-4.jpg&quot; alt=&quot;image5-4&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;我猜想比例在黄金分割（1.618）附近会比较美观。事实证明也是如此。所以比例应该尽量精确固定在1.618附近。   &lt;br /&gt;
-原图没有经过压缩，每张的大小在 2-3 MB， 五张图已经使网页刷新速度变慢。。。还是需要在不影响观感的情况下，压缩在100K以下。&lt;br /&gt;
-主页每个类别预览处需要重新写代码，看起来太烂。&lt;br /&gt;
-长久来看，游记的照片需要存在一个可靠的地方，提供链接即可。&lt;/p&gt;
-
+        <title>追本溯源与单纯明快</title>
+        <description>&lt;p&gt;做好一件事情就好了，所以要想的，是怎么突破自己的极限。&lt;br /&gt;
+热情，动力，和掌控，都来源于对终极目标的明确；从此出发，去探索和延伸，从内而外，并以此目标判断日常是否值得去做，赋予日常以意义，才能做好，做的开心。&lt;br /&gt;
+反之，则是被动和无穷的应付。&lt;br /&gt;
+对于现在的工作，我该思考的唯一目标，就是：&lt;br /&gt;
+怎么把model做到最好，并发挥最大的影响力？&lt;br /&gt;
+从此出发，应该主动去探索model本身的可能性，学习，实验，测量，提高准确度；同时，怎样去推广，让别的组尽可能多的去用。&lt;br /&gt;
+以此为尺，赋予日常以意义，才能真正的单纯明快。&lt;/p&gt;
 </description>
-        <pubDate>Tue, 08 Mar 2016 00:00:00 -0800</pubDate>
-        <link>http://shuaishao.me//2016/skiing-lake-tahoe/</link>
-        <guid isPermaLink="true">http://shuaishao.me//2016/skiing-lake-tahoe/</guid>
-        
-        <category>travel</category>
-        
-        <category>photography</category>
-        
-        
-        <category>travel</category>
-        
-      </item>
-    
-      <item>
-        <title>相机和镜头的选择</title>
-        <description>&lt;p&gt;自从上一个单反被偷，之后就一直用手机拍。&lt;br /&gt;
-好处自然是方便，在旅行过程中也比较便于携带，不用为了拍照牺牲游玩的兴致。&lt;br /&gt;
-然而看见好照片还是会激动啊。就凭这点激动，是时候入一个好点的相机了吧。加上整理照片时，手机拍的照片在电脑屏幕上真是惨不忍睹。既然把旅行作为新年的resolution之一，就没有必要不做好；所以，重新入坑。&lt;br /&gt;
-相机基本确定是Sony A7ii。考虑黑科技和性价比，A7ii是我现在最想入的机器。索尼大法好：）&lt;br /&gt;
-那么问题来了：如果只考虑一只定焦挂机的话，选什么焦段的什么镜头？&lt;br /&gt;
-现在犹豫的主要是50还是35. 全画幅上，50更适合人文，人像，静物等；而35更适合人文，抓拍，街景等。考虑到我目前最需要的照片风格，自己的技术，第一支倾向于入50。&lt;br /&gt;
-看了网上的评价，综合一下，决定入原产的FE55mm f1.8。性能，重量，画质，性价比一流，可以符合一机一镜的要求。&lt;br /&gt;
-A7ii + FE55 1.8, 目前最优组合。什么都好，只是，价钱感人。&lt;br /&gt;
-那么，多拍几张好照片吧。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/blogs/cherryblossom.jpg&quot; alt=&quot;headimage&quot; /&gt;
-(照片来自别人的博客，只因我也在目黑川看过樱花)&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 08 Mar 2016 00:00:00 -0800</pubDate>
-        <link>http://shuaishao.me//2016/camera-and-lens/</link>
-        <guid isPermaLink="true">http://shuaishao.me//2016/camera-and-lens/</guid>
-        
-        <category>travel</category>
-        
-        <category>photography</category>
-        
-        
-        <category>travel</category>
-        
-      </item>
-    
-      <item>
-        <title>Doppelganger</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://blog.sina.com.cn/u/2024022614&quot; target=&quot;_blank&quot;&gt;http://blog.sina.com.cn/u/2024022614&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Tue, 08 Mar 2016 00:00:00 -0800</pubDate>
-        <link>http://shuaishao.me//2016/doppelganger/</link>
-        <guid isPermaLink="true">http://shuaishao.me//2016/doppelganger/</guid>
+        <pubDate>Thu, 26 Jan 2017 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000//2017/work/</link>
+        <guid isPermaLink="true">http://localhost:4000//2017/work/</guid>
         
         <category>misc</category>
         
@@ -220,17 +151,16 @@ A7ii + FE55 1.8, 目前最优组合。什么都好，只是，价钱感人。&lt
       </item>
     
       <item>
-        <title>2016我的旅行计划</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/images/blogs/magnets.jpg&quot; alt=&quot;magnets&quot; /&gt;
-日本：二月。&lt;br /&gt;
-波士顿：五月。&lt;br /&gt;
-加拿大：待定。看家人。&lt;br /&gt;
-英国：冬天，待定。在教授离开前看一场兵工厂的比赛。&lt;/p&gt;
+        <title>2017我的旅行计划</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/blogs/magnets2017.jpg&quot; alt=&quot;magnets&quot; /&gt;
+英国&amp;amp;法国&lt;br /&gt;
+加拿大&lt;br /&gt;
+南美：阿根廷/玻利维亚/秘鲁&lt;/p&gt;
 
 </description>
-        <pubDate>Mon, 07 Mar 2016 00:00:00 -0800</pubDate>
-        <link>http://shuaishao.me//2016/my-travel-plan/</link>
-        <guid isPermaLink="true">http://shuaishao.me//2016/my-travel-plan/</guid>
+        <pubDate>Fri, 13 Jan 2017 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000//2017/my-travel-plan/</link>
+        <guid isPermaLink="true">http://localhost:4000//2017/my-travel-plan/</guid>
         
         <category>travel</category>
         
@@ -240,130 +170,80 @@ A7ii + FE55 1.8, 目前最优组合。什么都好，只是，价钱感人。&lt
       </item>
     
       <item>
-        <title>About me, about this blog</title>
-        <description>&lt;p&gt;&lt;strong&gt;About me:&lt;/strong&gt;&lt;br /&gt;
-  A physicist/data scientist/minimalist.  &lt;br /&gt;
-  Less is more.&lt;/p&gt;
+        <title>2017读书计划和书单</title>
+        <description>&lt;p&gt;2017， 10本：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://statweb.stanford.edu/~tibs/ElemStatLearn/&quot; target=&quot;_blank&quot;&gt;Elements of Statistical Learning&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.otexts.org/fpp&quot; target=&quot;_blank&quot;&gt;Forecasting: principles and practice&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://db.ucsd.edu/static/TimeSeries.pdf&quot; target=&quot;_blank&quot;&gt;Time Series Analysis and Its Applications&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://book.douban.com/subject/1458363/&quot; target=&quot;_blank&quot;&gt;The Razor’s Edge&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://book.douban.com/subject/26427705/&quot; target=&quot;_blank&quot;&gt;三体3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://book.douban.com/subject/24753651/&quot; target=&quot;_blank&quot;&gt;Zero to One&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://book.douban.com/subject/3566719/&quot; target=&quot;_blank&quot;&gt;The professor and the housekeeper&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://book.douban.com/subject/1813841/&quot; target=&quot;_blank&quot;&gt;Guns, Germs, and Steel&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;About this blog:&lt;/strong&gt;&lt;br /&gt;
-  Hosted on Github.&lt;br /&gt;
-  Created using Jekyll.&lt;br /&gt;
-  Blogged in English and Chinese.    &lt;br /&gt;
-  About things I like.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 07 Mar 2016 00:00:00 -0800</pubDate>
-        <link>http://shuaishao.me//2016/about-me/</link>
-        <guid isPermaLink="true">http://shuaishao.me//2016/about-me/</guid>
+        <pubDate>Wed, 04 Jan 2017 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000//2017/book-list-2017/</link>
+        <guid isPermaLink="true">http://localhost:4000//2017/book-list-2017/</guid>
         
-        <category>misc</category>
+        <category>books</category>
         
         
-        <category>misc</category>
+        <category>books</category>
         
       </item>
     
       <item>
-        <title>SQL - First row in each Group</title>
-        <description>&lt;p&gt;Say we have a nice teacher rating website for Hogwarts students (www.castledoor.hw) and users like Harry and Hermione like to come and review their professors.  I have got a &lt;strong&gt;reviews&lt;/strong&gt; table that looks like:&lt;br /&gt;
-&lt;!-- this part is for inserting a table, which is not convenient in markdown--&gt;&lt;/p&gt;
-&lt;style type=&quot;text/css&quot;&gt;
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg .tg-yw4l{vertical-align:top}
-&lt;/style&gt;
+        <title>A good introduction to random forest</title>
+        <description>&lt;p&gt;Saw a pretty good introduction to random forest today:&lt;br /&gt;
+http://blog.echen.me/2011/03/14/laymans-introduction-to-random-forests/&lt;br /&gt;
+—&lt;br /&gt;
+Suppose you’re very indecisive, so whenever you want to watch a movie, you ask your friend Willow if she thinks you’ll like it. In order to answer, Willow first needs to figure out what movies you like, so you give her a bunch of movies and tell her whether you liked each one or not (i.e., you give her a labeled training set). Then, when you ask her if she thinks you’ll like movie X or not, she plays a 20 questions-like game with IMDB, asking questions like “Is X a romantic movie?”, “Does Johnny Depp star in X?”, and so on. She asks more informative questions first (i.e., she maximizes the information gain of each question), and gives you a yes/no answer at the end.&lt;/p&gt;
 
-&lt;table class=&quot;tg&quot;&gt;
-  &lt;tr&gt;
-    &lt;th class=&quot;tg-031e&quot;&gt;PK_id&lt;/th&gt;
-    &lt;th class=&quot;tg-031e&quot;&gt;users&lt;/th&gt;
-    &lt;th class=&quot;tg-031e&quot;&gt;n_reviews&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td class=&quot;tg-031e&quot;&gt;1&lt;/td&gt;
-    &lt;td class=&quot;tg-031e&quot;&gt;Harry&lt;/td&gt;
-    &lt;td class=&quot;tg-031e&quot;&gt;5&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td class=&quot;tg-031e&quot;&gt;2&lt;/td&gt;
-    &lt;td class=&quot;tg-031e&quot;&gt;Hermione&lt;/td&gt;
-    &lt;td class=&quot;tg-031e&quot;&gt;8&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td class=&quot;tg-031e&quot;&gt;3&lt;/td&gt;
-    &lt;td class=&quot;tg-031e&quot;&gt;Hermione&lt;/td&gt;
-    &lt;td class=&quot;tg-031e&quot;&gt;12&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td class=&quot;tg-yw4l&quot;&gt;4&lt;/td&gt;
-    &lt;td class=&quot;tg-yw4l&quot;&gt;Harry&lt;/td&gt;
-    &lt;td class=&quot;tg-yw4l&quot;&gt;3&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td class=&quot;tg-yw4l&quot;&gt;5&lt;/td&gt;
-    &lt;td class=&quot;tg-yw4l&quot;&gt;Hermione&lt;/td&gt;
-    &lt;td class=&quot;tg-yw4l&quot;&gt;6&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
+&lt;p&gt;Thus, Willow is a decision tree for your movie preferences.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;So the question is:&lt;/strong&gt;&lt;br /&gt;
-How to get the highest number of reviews by each student?&lt;br /&gt;
-Sample output would be:&lt;/p&gt;
-&lt;style type=&quot;text/css&quot;&gt;
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-&lt;/style&gt;
+&lt;p&gt;But Willow is only human, so she doesn’t always generalize your preferences very well (i.e., she overfits). In order to get more accurate recommendations, you’d like to ask a bunch of your friends, and watch movie X if most of them say they think you’ll like it. That is, instead of asking only Willow, you want to ask Woody, Apple, and Cartman as well, and they vote on whether you’ll like a movie (i.e., you build an ensemble classifier, aka a forest in this case).&lt;/p&gt;
 
-&lt;table class=&quot;tg&quot;&gt;
-  &lt;tr&gt;
-    &lt;th class=&quot;tg-031e&quot;&gt;PK_id&lt;/th&gt;
-    &lt;th class=&quot;tg-031e&quot;&gt;users&lt;/th&gt;
-    &lt;th class=&quot;tg-031e&quot;&gt;n_reviews&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td class=&quot;tg-031e&quot;&gt;1&lt;/td&gt;
-    &lt;td class=&quot;tg-031e&quot;&gt;Harry&lt;/td&gt;
-    &lt;td class=&quot;tg-031e&quot;&gt;5&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td class=&quot;tg-031e&quot;&gt;3&lt;/td&gt;
-    &lt;td class=&quot;tg-031e&quot;&gt;Hermione&lt;/td&gt;
-    &lt;td class=&quot;tg-031e&quot;&gt;12&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
+&lt;p&gt;Now you don’t want each of your friends to do the same thing and give you the same answer, so you first give each of them slightly different data. After all, you’re not absolutely sure of your preferences yourself – you told Willow you loved Titanic, but maybe you were just happy that day because it was your birthday, so maybe some of your friends shouldn’t use the fact that you liked Titanic in making their recommendations. Or maybe you told her you loved Cinderella, but actually you really really loved it, so some of your friends should give Cinderella more weight. So instead of giving your friends the same data you gave Willow, you give them slightly perturbed versions. You don’t change your love/hate decisions, you just say you love/hate some movies a little more or less (formally, you give each of your friends a bootstrapped version of your original training data). For example, whereas you told Willow that you liked Black Swan and Harry Potter and disliked Avatar, you tell Woody that you liked Black Swan so much you watched it twice, you disliked Avatar, and don’t mention Harry Potter at all.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;And the question really is:&lt;/strong&gt; &lt;br /&gt;
-How to select first row of each set of rows grouped with a &lt;em&gt;GROUP BY&lt;/em&gt;?&lt;br /&gt;
-&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;By using this ensemble, you hope that while each of your friends gives somewhat idiosyncratic recommendations (Willow thinks you like vampire movies more than you do, Woody thinks you like Pixar movies, and Cartman thinks you just hate everything), the errors get canceled out in the majority. Thus, your friends now form a bagged (bootstrap aggregated) forest of your movie preferences.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;WITH&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;review_order&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;PK_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;users&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n_reviews&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;ROW_NUMBER&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;OVER&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PARTITION&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;users&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n_reviews&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DESC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rn&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;reviews&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;PK_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;users&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n_reviews&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;review_order&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;rn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;p&gt;There’s still one problem with your data, however. While you loved both Titanic and Inception, it wasn’t because you like movies that star Leonardio DiCaprio. Maybe you liked both movies for other reasons. Thus, you don’t want your friends to all base their recommendations on whether Leo is in a movie or not. So when each friend asks IMDB a question, only a random subset of the possible questions is allowed (i.e., when you’re building a decision tree, at each node you use some randomness in selecting the attribute to split on, say by randomly selecting an attribute or by selecting an attribute from a random subset). This means your friends aren’t allowed to ask whether Leonardo DiCaprio is in the movie whenever they want. So whereas previously you injected randomness at the data level, by perturbing your movie preferences slightly, now you’re injecting randomness at the model level, by making your friends ask different questions at different times.&lt;/p&gt;
+
+&lt;p&gt;And so your friends now form a random forest.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 07 Mar 2016 00:00:00 -0800</pubDate>
-        <link>http://shuaishao.me//2016/sql-first-row-in-each-group/</link>
-        <guid isPermaLink="true">http://shuaishao.me//2016/sql-first-row-in-each-group/</guid>
+        <pubDate>Thu, 22 Sep 2016 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000//2016/introrf/</link>
+        <guid isPermaLink="true">http://localhost:4000//2016/introrf/</guid>
         
         <category>data</category>
         
-        <category>sql</category>
-        
         
         <category>data</category>
+        
+      </item>
+    
+      <item>
+        <title>突然想起老头子</title>
+        <description>&lt;p&gt;用我妈的话说，老爸是个老顽童。  &lt;br /&gt;
+从小带我打游戏机，看足球，下军旗的都是老爸。&lt;br /&gt;
+还有背诗。老爸记忆力很好，年轻的时候也是个文艺小青年。我小的时候，经常问我古文学到哪了，然后即兴给我背首诗：&lt;br /&gt;
+卖炭翁，伐薪烧炭南山中。。。&lt;br /&gt;
+八月秋高风怒号，卷我屋上三重茅。。。&lt;br /&gt;
+老头子普通话又不标准，甚是有意思。&lt;br /&gt;
+今天突然想到汶川地震后，老爸拉着老妈，无论如何要领养一个受灾的孩子，最终因为政策不允许只能作罢。&lt;br /&gt;
+经常给老妈打电话，回头该给老头子打个电话了。&lt;/p&gt;
+</description>
+        <pubDate>Mon, 29 Aug 2016 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000//2016/dad/</link>
+        <guid isPermaLink="true">http://localhost:4000//2016/dad/</guid>
+        
+        <category>misc</category>
+        
+        
+        <category>misc</category>
         
       </item>
     

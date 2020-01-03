@@ -43,7 +43,7 @@
   <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://shuaishao.me//data/">
+  <link rel="canonical" href="http://localhost:4000//data/">
   <link rel="alternate" type="application/rss+xml" title="Shuai Shao" href="/feed.xml">
 </head>
 
@@ -140,6 +140,190 @@
   <ol class="post-list">
     
       <li>
+        <h2 class="post-list__post-title post-title"><a href="/2019/research_topicsmd/" title="Interesting Research Topics">Interesting Research Topics</a></h2>
+        <p class="excerpt">1.Explainability of Deep Learning
+
+  Ranking problems
+
+&hellip;</p> <!--use truncatewords instead of excerpt, too long-->
+        <!--<p class="excerpt">1.Explainability of Deep Learning
+<ol>
+  <li>Ranking problems</li>
+</ol>
+&hellip;</p>-->
+        <div class="post-list__meta"><time datetime="27 Oct 2019" class="post-list__meta--date date">27 Oct 2019</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#data">data</a> <a href="/tags/#machine learning">machine learning</a> <a href="/tags/#statistics">statistics</a> </span></div>
+        <hr class="post-list__divider">
+      </li>
+    
+      <li>
+        <h2 class="post-list__post-title post-title"><a href="/2018/label_propagation/" title="Singular-value Decomposition">Singular-value Decomposition</a></h2>
+        <p class="excerpt">Singular-value Decomposition is widely used in collaborative filtering. Imagine you are building a recommendation system for recommending books to users. You have m users and n potential books to recommend....&hellip;</p> <!--use truncatewords instead of excerpt, too long-->
+        <!--<p class="excerpt">Singular-value Decomposition is widely used in collaborative filtering.<br />
+Imagine you are building a recommendation system for recommending books to users. You have m users and n potential books to recommend. You also have some historical ratings of some users on some books.<br />
+Based on this, you can formulate a utility matrix where each row represents a user and each column represents a book. You can, of course, calculate the correlation between users or books and recommend based on a correlation weighted ratings average, but the problem with that is the matrix is very sparse (you have lots of empty entries), and the process is very computationally expensive (hard to scale).<br />
+An idea to resolve this is to factorize the utility matrix using singular-value decomposition. By using, you can decompose the m<em>n matrix into three matrices: A = USV^T - m</em>n = (m<em>k) * (k</em>k) * (k*n). The idea is to do dimension reduction by extracting  latent factors from the utility matrix (and hopefully still preserves most variance). Intuitively, this is similar to finding a low dimensional manifold out of a high dimensional space. By doing so, you are able to represent information in a condenser way, and thus mitigate the data sparsity and computationally issue.<br />
+Following up on the above book recommendation example. Intuitively what we are doing here is finding k most ‘important’ features and project users and books onto the k-dimensional space these k features define. For example, one feature could be the genre of the book, another could be the language of the book. Both U and V are singular matrices. Each row of U represents an eigenvector for a user. Each column of V^T represents an eigenvector for a book. S is a diagonal matrix and each diagonal entry represents an eigenvalue (strength of the latent factor). The predicted rating from user i to book j will simply be a summation of the projection of i on dimension k, projection of j on dimension k, and the strength of dimension k over all k dimensions.<br />
+(Get the picture right, and SVD is easy to understand)
+&hellip;</p>-->
+        <div class="post-list__meta"><time datetime="25 Jun 2018" class="post-list__meta--date date">25 Jun 2018</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#data">data</a> </span></div>
+        <hr class="post-list__divider">
+      </li>
+    
+      <li>
+        <h2 class="post-list__post-title post-title"><a href="/2018/SVD/" title="Label Propagation">Label Propagation</a></h2>
+        <p class="excerpt">Label propagation Definition Label propagation is a semi-supervised learning algorithm that assigns labels to previously unlabeled data points. It is a type of transductive learning. Label Propagation on Graphs Only...&hellip;</p> <!--use truncatewords instead of excerpt, too long-->
+        <!--<p class="excerpt">Label propagation
+
+&hellip;</p>-->
+        <div class="post-list__meta"><time datetime="15 Jun 2018" class="post-list__meta--date date">15 Jun 2018</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#data">data</a> </span></div>
+        <hr class="post-list__divider">
+      </li>
+    
+      <li>
+        <h2 class="post-list__post-title post-title"><a href="/2016/introrf/" title="A good introduction to random forest">A good introduction to random forest</a></h2>
+        <p class="excerpt">Saw a pretty good introduction to random forest today: http://blog.echen.me/2011/03/14/laymans-introduction-to-random-forests/ — Suppose you’re very indecisive, so whenever you want to watch a movie, you ask your friend Willow if she...&hellip;</p> <!--use truncatewords instead of excerpt, too long-->
+        <!--<p class="excerpt">Saw a pretty good introduction to random forest today:<br />
+http://blog.echen.me/2011/03/14/laymans-introduction-to-random-forests/<br />
+—<br />
+Suppose you’re very indecisive, so whenever you want to watch a movie, you ask your friend Willow if she thinks you’ll like it. In order to answer, Willow first needs to figure out what movies you like, so you give her a bunch of movies and tell her whether you liked each one or not (i.e., you give her a labeled training set). Then, when you ask her if she thinks you’ll like movie X or not, she plays a 20 questions-like game with IMDB, asking questions like “Is X a romantic movie?”, “Does Johnny Depp star in X?”, and so on. She asks more informative questions first (i.e., she maximizes the information gain of each question), and gives you a yes/no answer at the end.
+
+&hellip;</p>-->
+        <div class="post-list__meta"><time datetime="22 Sep 2016" class="post-list__meta--date date">22 Sep 2016</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#data">data</a> </span></div>
+        <hr class="post-list__divider">
+      </li>
+    
+      <li>
+        <h2 class="post-list__post-title post-title"><a href="/2016/timeSeriesForcasting/" title="Time series forcasting">Time series forcasting</a></h2>
+        <p class="excerpt">Time series forcasting:
+http://mp.weixin.qq.com/s?__biz=MzIzMjA2MjM2NA==&amp;mid=2695744029&amp;idx=5&amp;sn=c050ebc9f62774a8b616ef4a8d5a8654&amp;scene=5&amp;srcid=042652AhHx5ey8VEzbpEwa8k#rd
+&hellip;</p> <!--use truncatewords instead of excerpt, too long-->
+        <!--<p class="excerpt">Time series forcasting:<br />
+http://mp.weixin.qq.com/s?__biz=MzIzMjA2MjM2NA==&amp;mid=2695744029&amp;idx=5&amp;sn=c050ebc9f62774a8b616ef4a8d5a8654&amp;scene=5&amp;srcid=042652AhHx5ey8VEzbpEwa8k#rd
+&hellip;</p>-->
+        <div class="post-list__meta"><time datetime="11 May 2016" class="post-list__meta--date date">11 May 2016</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#data">data</a> </span></div>
+        <hr class="post-list__divider">
+      </li>
+    
+      <li>
+        <h2 class="post-list__post-title post-title"><a href="/2016/multicollinearity/" title="How to deal with multicollinearity">How to deal with multicollinearity</a></h2>
+        <p class="excerpt">~
+&hellip;</p> <!--use truncatewords instead of excerpt, too long-->
+        <!--<p class="excerpt">~
+&hellip;</p>-->
+        <div class="post-list__meta"><time datetime="21 Apr 2016" class="post-list__meta--date date">21 Apr 2016</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#data">data</a> </span></div>
+        <hr class="post-list__divider">
+      </li>
+    
+      <li>
+        <h2 class="post-list__post-title post-title"><a href="/2016/sql-window-functions/" title="Windown functions in SQL">Windown functions in SQL</a></h2>
+        <p class="excerpt">What are window functions? What are the differences between ROW_NUMBE(), RANK(), AND DENSE_RANK()? p.s Mode Analytics is not only good for practicing sql, it’s blogposts and practices about analytics are...&hellip;</p> <!--use truncatewords instead of excerpt, too long-->
+        <!--<p class="excerpt">What are window functions?<br />
+What are the differences between ROW_NUMBE(), RANK(), AND DENSE_RANK()?<br />
+p.s Mode Analytics is not only good for practicing sql, it’s blogposts and practices about analytics are good study materials too.
+&hellip;</p>-->
+        <div class="post-list__meta"><time datetime="14 Apr 2016" class="post-list__meta--date date">14 Apr 2016</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#data">data</a> <a href="/tags/#sql">sql</a> </span></div>
+        <hr class="post-list__divider">
+      </li>
+    
+      <li>
+        <h2 class="post-list__post-title post-title"><a href="/2016/sql-advanced/" title="Finally find a good place to sharpend SQL">Finally find a good place to sharpend SQL</a></h2>
+        <p class="excerpt">Mode Analytics
+Good to sharpen some advanced sql like window functions, optimizing sql queries, and analytical skills.
+&hellip;</p> <!--use truncatewords instead of excerpt, too long-->
+        <!--<p class="excerpt">Mode Analytics<br />
+Good to sharpen some advanced sql like window functions, optimizing sql queries, and analytical skills.
+&hellip;</p>-->
+        <div class="post-list__meta"><time datetime="30 Mar 2016" class="post-list__meta--date date">30 Mar 2016</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#data">data</a> <a href="/tags/#sql">sql</a> </span></div>
+        <hr class="post-list__divider">
+      </li>
+    
+      <li>
+        <h2 class="post-list__post-title post-title"><a href="/2016/missing-data/" title="How to deal with missing data">How to deal with missing data</a></h2>
+        <p class="excerpt">https://www.linkedin.com/pulse/dealing-missing-values-predictive-models-claudia-perlich?trk=v-feed&amp;lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BHBbEtDuPat%2FHTzqZY4plbw%3D%3D
+&hellip;</p> <!--use truncatewords instead of excerpt, too long-->
+        <!--<p class="excerpt">https://www.linkedin.com/pulse/dealing-missing-values-predictive-models-claudia-perlich?trk=v-feed&amp;lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BHBbEtDuPat%2FHTzqZY4plbw%3D%3D
+&hellip;</p>-->
+        <div class="post-list__meta"><time datetime="26 Mar 2016" class="post-list__meta--date date">26 Mar 2016</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#data">data</a> </span></div>
+        <hr class="post-list__divider">
+      </li>
+    
+      <li>
+        <h2 class="post-list__post-title post-title"><a href="/2016/unicode-and-ascii/" title="Unicode and ASCII">Unicode and ASCII</a></h2>
+        <p class="excerpt">http://betterexplained.com/articles/unicode/
+&hellip;</p> <!--use truncatewords instead of excerpt, too long-->
+        <!--<p class="excerpt">http://betterexplained.com/articles/unicode/
+&hellip;</p>-->
+        <div class="post-list__meta"><time datetime="22 Mar 2016" class="post-list__meta--date date">22 Mar 2016</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#data">data</a> </span></div>
+        <hr class="post-list__divider">
+      </li>
+    
+      <li>
+        <h2 class="post-list__post-title post-title"><a href="/2016/python-regex/" title="Python Regex">Python Regex</a></h2>
+        <p class="excerpt">~
+&hellip;</p> <!--use truncatewords instead of excerpt, too long-->
+        <!--<p class="excerpt">~
+&hellip;</p>-->
+        <div class="post-list__meta"><time datetime="22 Mar 2016" class="post-list__meta--date date">22 Mar 2016</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#data">data</a> <a href="/tags/#python">python</a> </span></div>
+        <hr class="post-list__divider">
+      </li>
+    
+      <li>
+        <h2 class="post-list__post-title post-title"><a href="/2016/apply-and-map/" title="Difference between apply and map (and applymap) in Pandas">Difference between apply and map (and applymap) in Pandas</a></h2>
+        <p class="excerpt">Shown in one simple example: Create dataframe: map: Iterates over each element of a series apply: applies a function along any axis of a dataframe. axis = 0: vertical axis...&hellip;</p> <!--use truncatewords instead of excerpt, too long-->
+        <!--<p class="excerpt">Shown in one simple example:
+<ol>
+  <li>Create dataframe:<br />
+<img src="/images/blogs/applymap/createdf.png" alt="createdf" /></li>
+  <li>map:<br />
+Iterates over each element of a series 
+<img src="/images/blogs/applymap/map.png" alt="map" /></li>
+  <li>apply:
+applies a function along any axis of a dataframe.<br />
+axis = 0: vertical<br />
+axis = 1: horizontal<br />
+<img src="/images/blogs/applymap/apply.png" alt="apply" /></li>
+  <li>applymap:<br />
+apply a function to each element of a dataframe<br />
+<img src="/images/blogs/applymap/applymap.png" alt="applymap" /></li>
+</ol>
+&hellip;</p>-->
+        <div class="post-list__meta"><time datetime="22 Mar 2016" class="post-list__meta--date date">22 Mar 2016</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#data">data</a> <a href="/tags/#python">python</a> </span></div>
+        <hr class="post-list__divider">
+      </li>
+    
+      <li>
+        <h2 class="post-list__post-title post-title"><a href="/2016/on-and-where/" title="Filter in ON or WHERE when joining tables?">Filter in ON or WHERE when joining tables?</a></h2>
+        <p class="excerpt">When using INNER JOIN, ON and WHERE will have the same result. This is not the case for OUTER JOIN though.
+Will come back to this for more details.
+&hellip;</p> <!--use truncatewords instead of excerpt, too long-->
+        <!--<p class="excerpt">When using <code class="highlighter-rouge">INNER JOIN</code>, <code class="highlighter-rouge">ON</code> and <code class="highlighter-rouge">WHERE</code> will have the same result. This is not the case for <code class="highlighter-rouge">OUTER JOIN</code> though.<br />
+Will come back to this for more details.
+&hellip;</p>-->
+        <div class="post-list__meta"><time datetime="21 Mar 2016" class="post-list__meta--date date">21 Mar 2016</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#data">data</a> <a href="/tags/#sql">sql</a> </span></div>
+        <hr class="post-list__divider">
+      </li>
+    
+      <li>
+        <h2 class="post-list__post-title post-title"><a href="/2016/pandas-location-slice/" title="Pandas: differences between ix, loc, and iloc">Pandas: differences between ix, loc, and iloc</a></h2>
+        <p class="excerpt">Come back to this later. Summarize the differences between ix, loc, and iloc.
+&hellip;</p> <!--use truncatewords instead of excerpt, too long-->
+        <!--<p class="excerpt">Come back to this later. Summarize the differences between ix, loc, and iloc.
+&hellip;</p>-->
+        <div class="post-list__meta"><time datetime="15 Mar 2016" class="post-list__meta--date date">15 Mar 2016</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#data">data</a> <a href="/tags/#python">python</a> </span></div>
+        <hr class="post-list__divider">
+      </li>
+    
+      <li>
+        <h2 class="post-list__post-title post-title"><a href="/2016/naive-bayes/" title="About Naive Bayes">About Naive Bayes</a></h2>
+        <p class="excerpt">Learn Naive Bayes Algorithm
+&hellip;</p> <!--use truncatewords instead of excerpt, too long-->
+        <!--<p class="excerpt">Learn Naive Bayes Algorithm
+&hellip;</p>-->
+        <div class="post-list__meta"><time datetime="15 Mar 2016" class="post-list__meta--date date">15 Mar 2016</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#data">data</a> <a href="/tags/#machine learning">machine learning</a> <a href="/tags/#statistics">statistics</a> </span></div>
+        <hr class="post-list__divider">
+      </li>
+    
+      <li>
         <h2 class="post-list__post-title post-title"><a href="/2016/next-stage-ds-learning/" title="Next stage DS learning">Next stage DS learning</a></h2>
         <p class="excerpt">Stats and machine learning: An Introduction to Statistical Learning book A stats book, TBD Natural Language Processing with Python book Analytics: Lean Analytics book Think more in projects: how to...&hellip;</p> <!--use truncatewords instead of excerpt, too long-->
         <!--<p class="excerpt"><ul>
@@ -215,25 +399,27 @@ Working environment is somehow different from PhD life. You don’t have that mu
 <strong>ROI</strong>: Prioritize your tasks. Work on things with higher ROI.<br />
 <strong>80% rule</strong>: Get 80% job done in a short period is much better than getting 99% done in a long time<br />
 <strong>15 mins rule</strong>: No need to reinvent the wheel. Whenever you get stuck for some time (maybe 15 mins), stand up and ask around. Data sciense is teamwork.   
-Skillwise, I belive these skills will be heavily involved and honed in my current project:<br />
-1. Communication<br />
-Definitely the most important skill. Should be able to convey your ideas and deliver your results to others fully and clearly. Be mindful about high-level thinking and talking (speak English, not math). Also, listen really well to others’ ideas. Be open-minded. Listen to understand, not to be right.<br />
-2. Information integration<br />
-A lot of times, I will be working with multiple data/infomation from different data sources. Being able to connect the dots and integrate information is crucial.<br />
-3. SQL<br />
-Retrieving data from our database.   
-4. Python<br />
-Especially packages like Pandas, Numpy, sklearn, matplotlib. Data cleaning, merging, wrangling, and machine learning!<br />
-5. R<br />
-Though I am a big Python fan, it’s good to know something new.   
-6. Machine Learning<br />
-Black box! Secret weapon!<br />
-7. Tableau (data delivery / visualization)<br />
+Skillwise, I belive these skills will be heavily involved and honed in my current project:
+<ol>
+  <li>Communication<br />
+Definitely the most important skill. Should be able to convey your ideas and deliver your results to others fully and clearly. Be mindful about high-level thinking and talking (speak English, not math). Also, listen really well to others’ ideas. Be open-minded. Listen to understand, not to be right.</li>
+  <li>Information integration<br />
+A lot of times, I will be working with multiple data/infomation from different data sources. Being able to connect the dots and integrate information is crucial.</li>
+  <li>SQL<br />
+Retrieving data from our database.   </li>
+  <li>Python<br />
+Especially packages like Pandas, Numpy, sklearn, matplotlib. Data cleaning, merging, wrangling, and machine learning!</li>
+  <li>R<br />
+Though I am a big Python fan, it’s good to know something new.   </li>
+  <li>Machine Learning<br />
+Black box! Secret weapon!</li>
+  <li>Tableau (data delivery / visualization)<br />
 Deliver your insights and results in a neat and actionable manner.<br />
 Some skills I want to learn but are not emphasized here include big data platform (Spark especially), interactive data visualization (D3), and database knowledge. So, here are three online courses that can get my feet wet. Play with them in my free time!<br />
 1. <a href="https://www.edx.org/course/introduction-big-data-apache-spark-uc-berkeleyx-cs100-1x" target="_blank">Introduction to Big Data with Apache Spark</a>  <br />
 2. <a href="https://www.udacity.com/course/data-visualization-and-d3js--ud507" target="_blank">Data Visualization and D3.js</a>  <br />
-3. <a href="https://lagunita.stanford.edu/courses/Engineering/db/2014_1/about" target="_blank">Introduction to Databases</a>
+3. <a href="https://lagunita.stanford.edu/courses/Engineering/db/2014_1/about" target="_blank">Introduction to Databases</a></li>
+</ol>
 
 &hellip;</p>-->
         <div class="post-list__meta"><time datetime="7 Mar 2016" class="post-list__meta--date date">7 Mar 2016</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#data">data</a> </span></div>
@@ -262,7 +448,7 @@ Some skills I want to learn but are not emphasized here include big data platf
       </div>
 
       <footer class="footer">
-  <span class="footer__copyright">&copy; 2016 Shuai Shao. All rights reserved.</span>
+  <span class="footer__copyright">&copy; 2020 Shuai Shao. All rights reserved.</span>
 </footer> 
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
