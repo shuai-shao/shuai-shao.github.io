@@ -43,7 +43,7 @@
   <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000//2016/sql-first-row-in-each-group/">
+  <link rel="canonical" href="http://shuai-shao.com//2016/sql-first-row-in-each-group/">
   <link rel="alternate" type="application/rss+xml" title="Shuai Shao" href="/feed.xml">
 </head>
 
@@ -217,7 +217,7 @@ Sample output would be:</p>
 How to select first row of each set of rows grouped with a <em>GROUP BY</em>?<br />
 <strong>Answer:</strong></p>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">WITH</span> <span class="n">review_order</span> <span class="k">AS</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">WITH</span> <span class="n">review_order</span> <span class="k">AS</span>
 <span class="p">(</span>
 <span class="k">SELECT</span>
 	<span class="n">PK_id</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">n_reviews</span><span class="p">,</span>
@@ -231,7 +231,8 @@ How to select first row of each set of rows grouped with a <em>GROUP BY</em>?<b
 	<span class="n">review_order</span>
 <span class="k">WHERE</span>
 	<span class="n">rn</span> <span class="o">=</span> <span class="mi">1</span>
-</code></pre></div></div>
+</code></pre>
+</div>
 
 <ul>
   <li>This only works in MS SQL and Oracle, not in MySQL.</li>
@@ -246,7 +247,7 @@ How to select first row of each set of rows grouped with a <em>GROUP BY</em>?<b
       </div>
 
       <footer class="footer">
-  <span class="footer__copyright">&copy; 2020 Shuai Shao. All rights reserved.</span>
+  <span class="footer__copyright">&copy; 2021 Shuai Shao. All rights reserved.</span>
 </footer> 
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

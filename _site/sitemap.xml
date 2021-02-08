@@ -3,7 +3,37 @@
   
     
     <url>
-      <loc>http://localhost:4000/2020/machine-learning-interpretability/</loc>
+      <loc>http://shuai-shao.com/2021/daming/</loc>
+      
+        <lastmod>2021-02-07T00:00:00-08:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://shuai-shao.com/2021/book-list-2021/</loc>
+      
+        <lastmod>2021-02-07T00:00:00-08:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://shuai-shao.com/2020/machine-learning-interpretability/</loc>
       
         <lastmod>2020-01-15T00:00:00-08:00</lastmod>
       
@@ -18,7 +48,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2019/research_topicsmd/</loc>
+      <loc>http://shuai-shao.com/2019/research_topicsmd/</loc>
       
         <lastmod>2019-10-27T00:00:00-07:00</lastmod>
       
@@ -33,7 +63,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2018/label_propagation/</loc>
+      <loc>http://shuai-shao.com/2018/label_propagation/</loc>
       
         <lastmod>2018-06-25T00:00:00-07:00</lastmod>
       
@@ -48,7 +78,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2018/SVD/</loc>
+      <loc>http://shuai-shao.com/2018/SVD/</loc>
       
         <lastmod>2018-06-15T00:00:00-07:00</lastmod>
       
@@ -63,7 +93,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2018/book-list-2018/</loc>
+      <loc>http://shuai-shao.com/2018/book-list-2018/</loc>
       
         <lastmod>2018-06-15T00:00:00-07:00</lastmod>
       
@@ -78,7 +108,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2017/work-30_percent/</loc>
+      <loc>http://shuai-shao.com/2017/work-30_percent/</loc>
       
         <lastmod>2017-03-29T00:00:00-07:00</lastmod>
       
@@ -93,7 +123,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2017/work/</loc>
+      <loc>http://shuai-shao.com/2017/work/</loc>
       
         <lastmod>2017-01-26T00:00:00-08:00</lastmod>
       
@@ -108,7 +138,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2017/my-travel-plan/</loc>
+      <loc>http://shuai-shao.com/2017/my-travel-plan/</loc>
       
         <lastmod>2017-01-13T00:00:00-08:00</lastmod>
       
@@ -123,7 +153,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2017/book-list-2017/</loc>
+      <loc>http://shuai-shao.com/2017/book-list-2017/</loc>
       
         <lastmod>2017-01-04T00:00:00-08:00</lastmod>
       
@@ -138,7 +168,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2016/introrf/</loc>
+      <loc>http://shuai-shao.com/2016/introrf/</loc>
       
         <lastmod>2016-09-22T00:00:00-07:00</lastmod>
       
@@ -153,7 +183,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2016/dad/</loc>
+      <loc>http://shuai-shao.com/2016/dad/</loc>
       
         <lastmod>2016-08-29T00:00:00-07:00</lastmod>
       
@@ -168,7 +198,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2016/299792459years/</loc>
+      <loc>http://shuai-shao.com/2016/299792459years/</loc>
       
         <lastmod>2016-08-25T00:00:00-07:00</lastmod>
       
@@ -183,7 +213,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2016/mahler1/</loc>
+      <loc>http://shuai-shao.com/2016/mahler1/</loc>
       
         <lastmod>2016-08-19T00:00:00-07:00</lastmod>
       
@@ -198,7 +228,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2016/libai/</loc>
+      <loc>http://shuai-shao.com/2016/libai/</loc>
       
         <lastmod>2016-08-16T00:00:00-07:00</lastmod>
       
@@ -213,7 +243,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2016/supermarket/</loc>
+      <loc>http://shuai-shao.com/2016/supermarket/</loc>
       
         <lastmod>2016-07-14T00:00:00-07:00</lastmod>
       
@@ -228,7 +258,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2016/random_thoughts/</loc>
+      <loc>http://shuai-shao.com/2016/random_thoughts/</loc>
       
         <lastmod>2016-06-29T00:00:00-07:00</lastmod>
       
@@ -243,7 +273,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2016/timeSeriesForcasting/</loc>
+      <loc>http://shuai-shao.com/2016/timeSeriesForcasting/</loc>
       
         <lastmod>2016-05-11T00:00:00-07:00</lastmod>
       
@@ -258,7 +288,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2016/multicollinearity/</loc>
+      <loc>http://shuai-shao.com/2016/multicollinearity/</loc>
       
         <lastmod>2016-04-21T00:00:00-07:00</lastmod>
       
@@ -273,7 +303,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2016/sql-window-functions/</loc>
+      <loc>http://shuai-shao.com/2016/sql-window-functions/</loc>
       
         <lastmod>2016-04-14T00:00:00-07:00</lastmod>
       
@@ -288,7 +318,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2016/sql-advanced/</loc>
+      <loc>http://shuai-shao.com/2016/sql-advanced/</loc>
       
         <lastmod>2016-03-30T00:00:00-07:00</lastmod>
       
@@ -303,7 +333,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2016/missing-data/</loc>
+      <loc>http://shuai-shao.com/2016/missing-data/</loc>
       
         <lastmod>2016-03-26T00:00:00-07:00</lastmod>
       
@@ -318,7 +348,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2016/unicode-and-ascii/</loc>
+      <loc>http://shuai-shao.com/2016/unicode-and-ascii/</loc>
       
         <lastmod>2016-03-22T00:00:00-07:00</lastmod>
       
@@ -333,7 +363,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2016/python-regex/</loc>
+      <loc>http://shuai-shao.com/2016/python-regex/</loc>
       
         <lastmod>2016-03-22T00:00:00-07:00</lastmod>
       
@@ -348,7 +378,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2016/apply-and-map/</loc>
+      <loc>http://shuai-shao.com/2016/apply-and-map/</loc>
       
         <lastmod>2016-03-22T00:00:00-07:00</lastmod>
       
@@ -363,7 +393,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2016/on-and-where/</loc>
+      <loc>http://shuai-shao.com/2016/on-and-where/</loc>
       
         <lastmod>2016-03-21T00:00:00-07:00</lastmod>
       
@@ -378,7 +408,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2016/pandas-location-slice/</loc>
+      <loc>http://shuai-shao.com/2016/pandas-location-slice/</loc>
       
         <lastmod>2016-03-15T00:00:00-07:00</lastmod>
       
@@ -393,7 +423,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2016/naive-bayes/</loc>
+      <loc>http://shuai-shao.com/2016/naive-bayes/</loc>
       
         <lastmod>2016-03-15T00:00:00-07:00</lastmod>
       
@@ -408,7 +438,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2016/next-stage-ds-learning/</loc>
+      <loc>http://shuai-shao.com/2016/next-stage-ds-learning/</loc>
       
         <lastmod>2016-03-13T00:00:00-08:00</lastmod>
       
@@ -423,7 +453,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2016/a-moment-in-onsen/</loc>
+      <loc>http://shuai-shao.com/2016/a-moment-in-onsen/</loc>
       
         <lastmod>2016-03-12T00:00:00-08:00</lastmod>
       
@@ -438,7 +468,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2016/format-for-travel-notes/</loc>
+      <loc>http://shuai-shao.com/2016/format-for-travel-notes/</loc>
       
         <lastmod>2016-03-11T00:00:00-08:00</lastmod>
       
@@ -453,7 +483,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2016/about-trade-offs/</loc>
+      <loc>http://shuai-shao.com/2016/about-trade-offs/</loc>
       
         <lastmod>2016-03-10T00:00:00-08:00</lastmod>
       
@@ -468,7 +498,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2016/skiing-lake-tahoe/</loc>
+      <loc>http://shuai-shao.com/2016/skiing-lake-tahoe/</loc>
       
         <lastmod>2016-03-08T00:00:00-08:00</lastmod>
       
@@ -483,7 +513,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2016/camera-and-lens/</loc>
+      <loc>http://shuai-shao.com/2016/camera-and-lens/</loc>
       
         <lastmod>2016-03-08T00:00:00-08:00</lastmod>
       
@@ -498,7 +528,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2016/doppelganger/</loc>
+      <loc>http://shuai-shao.com/2016/doppelganger/</loc>
       
         <lastmod>2016-03-08T00:00:00-08:00</lastmod>
       
@@ -513,7 +543,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2016/my-travel-plan/</loc>
+      <loc>http://shuai-shao.com/2016/my-travel-plan/</loc>
       
         <lastmod>2016-03-07T00:00:00-08:00</lastmod>
       
@@ -528,7 +558,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2016/about-me/</loc>
+      <loc>http://shuai-shao.com/2016/about-me/</loc>
       
         <lastmod>2016-03-07T00:00:00-08:00</lastmod>
       
@@ -543,7 +573,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2016/sql-first-row-in-each-group/</loc>
+      <loc>http://shuai-shao.com/2016/sql-first-row-in-each-group/</loc>
       
         <lastmod>2016-03-07T00:00:00-08:00</lastmod>
       
@@ -558,7 +588,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2016/one-month-as-a-real-data-scientist/</loc>
+      <loc>http://shuai-shao.com/2016/one-month-as-a-real-data-scientist/</loc>
       
         <lastmod>2016-03-07T00:00:00-08:00</lastmod>
       
@@ -573,7 +603,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2016/A-to-do-list-for-transitioning-to-data-science/</loc>
+      <loc>http://shuai-shao.com/2016/A-to-do-list-for-transitioning-to-data-science/</loc>
       
         <lastmod>2016-03-07T00:00:00-08:00</lastmod>
       
@@ -588,7 +618,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2016/book-list-2016/</loc>
+      <loc>http://shuai-shao.com/2016/book-list-2016/</loc>
       
         <lastmod>2016-03-07T00:00:00-08:00</lastmod>
       
@@ -604,24 +634,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/categories/</loc>
+      <loc>http://shuai-shao.com/categories/</loc>
       
-        <lastmod>2020-01-15T21:35:00-08:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/feed.xml</loc>
-      
-        <lastmod>2020-01-15T21:35:00-08:00</lastmod>
+        <lastmod>2021-02-07T23:00:30-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -634,24 +649,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/misc/</loc>
+      <loc>http://shuai-shao.com/feed.xml</loc>
       
-        <lastmod>2020-01-15T21:35:00-08:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/travel/</loc>
-      
-        <lastmod>2020-01-15T21:35:00-08:00</lastmod>
+        <lastmod>2021-02-07T23:00:30-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -664,24 +664,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/books/</loc>
+      <loc>http://shuai-shao.com/misc/</loc>
       
-        <lastmod>2020-01-15T21:35:00-08:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/data/</loc>
-      
-        <lastmod>2020-01-15T21:35:00-08:00</lastmod>
+        <lastmod>2021-02-07T23:00:30-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -694,41 +679,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/</loc>
+      <loc>http://shuai-shao.com/travel/</loc>
       
-        <lastmod>2020-01-15T21:35:00-08:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/js/main.js</loc>
-      
-        <lastmod>2020-01-15T21:35:00-08:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/tags/</loc>
-      
-        <lastmod>2020-01-15T21:35:00-08:00</lastmod>
+        <lastmod>2021-02-07T23:00:30-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -741,24 +694,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/page2/</loc>
+      <loc>http://shuai-shao.com/books/</loc>
       
-        <lastmod>2020-01-15T21:35:00-08:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/page3/</loc>
-      
-        <lastmod>2020-01-15T21:35:00-08:00</lastmod>
+        <lastmod>2021-02-07T23:00:30-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -771,9 +709,116 @@
   
     
     <url>
-      <loc>http://localhost:4000/page4/</loc>
+      <loc>http://shuai-shao.com/data/</loc>
       
-        <lastmod>2020-01-15T21:35:00-08:00</lastmod>
+        <lastmod>2021-02-07T23:00:30-08:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://shuai-shao.com/</loc>
+      
+        <lastmod>2021-02-07T23:00:30-08:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://shuai-shao.com/js/main.js</loc>
+      
+        <lastmod>2021-02-07T23:00:30-08:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+  
+    
+    <url>
+      <loc>http://shuai-shao.com/tags/</loc>
+      
+        <lastmod>2021-02-07T23:00:30-08:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://shuai-shao.com/page2/</loc>
+      
+        <lastmod>2021-02-07T23:00:30-08:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://shuai-shao.com/page3/</loc>
+      
+        <lastmod>2021-02-07T23:00:30-08:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://shuai-shao.com/page4/</loc>
+      
+        <lastmod>2021-02-07T23:00:30-08:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://shuai-shao.com/page5/</loc>
+      
+        <lastmod>2021-02-07T23:00:30-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
