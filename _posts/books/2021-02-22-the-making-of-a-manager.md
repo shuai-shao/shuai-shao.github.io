@@ -6,7 +6,9 @@ tags: [books]
 ---
 In summary, I like this book. Maybe because it's written by a former FB leader, and many principles sound all too familiar. Maybe it's also because some chapters speak directly to the problems I am currently facing and experiencing.  
 These all make this book relatable and relevant, and it was a great pleasure reading it.  
+
 Some notes:  
+
 **C5: Managing yourself**
 1. Get to brutal honest with yourself 
 2. Find your strength:
